@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EE5BE1662AFFB5F700CF26C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */; };
 		EE5BE1682AFFB5F700CF26C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */; };
-		EE5BE16A2AFFB5F700CF26C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1692AFFB5F700CF26C9 /* ViewController.swift */; };
-		EE5BE16D2AFFB5F700CF26C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE16B2AFFB5F700CF26C9 /* Main.storyboard */; };
 		EE5BE16F2AFFB5F700CF26C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */; };
 		EE5BE1722AFFB5F700CF26C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1702AFFB5F700CF26C9 /* LaunchScreen.storyboard */; };
 		EE5BE17D2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE17C2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift */; };
 		EE5BE1872AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1862AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift */; };
 		EE5BE1892AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1882AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift */; };
+		EE5BE19D2AFFB9C900CF26C9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */; };
+		EE5BE19E2AFFB9C900CF26C9 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */; };
+		EE5BE1A32AFFBA2000CF26C9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A22AFFBA2000CF26C9 /* Strings+Generated.swift */; };
+		EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */; };
+		EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */; };
+		EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */; };
+		EE5BE1BF2AFFC4E300CF26C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */; };
+		EE5BE1C02AFFC4E300CF26C9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */; };
+		EE5BE1C32AFFC86A00CF26C9 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE5BE1C22AFFC86A00CF26C9 /* Extensions */; };
+		EEE96E092AFFD0ED008F20E4 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE96E082AFFD0ED008F20E4 /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,6 @@
 		EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Appointment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE5BE1692AFFB5F700CF26C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE5BE16C2AFFB5F700CF26C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE5BE1712AFFB5F700CF26C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE5BE1732AFFB5F700CF26C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,16 @@
 		EE5BE1822AFFB5F800CF26C9 /* Doctor-AppointmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Doctor-AppointmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5BE1862AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_AppointmentUITests.swift; sourceTree = "<group>"; };
 		EE5BE1882AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_AppointmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EE5BE1A22AFFBA2000CF26C9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EE5BE1B72AFFBAF700CF26C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE5BE1B92AFFBAF800CF26C9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		EEE96E082AFFD0ED008F20E4 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BE1C32AFFC86A00CF26C9 /* Extensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,8 @@
 		EE5BE1592AFFB5F700CF26C9 = {
 			isa = PBXGroup;
 			children = (
+				EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */,
+				EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */,
 				EE5BE1642AFFB5F700CF26C9 /* Doctor-Appointment */,
 				EE5BE17B2AFFB5F800CF26C9 /* Doctor-AppointmentTests */,
 				EE5BE1852AFFB5F800CF26C9 /* Doctor-AppointmentUITests */,
@@ -99,11 +118,10 @@
 		EE5BE1642AFFB5F700CF26C9 /* Doctor-Appointment */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BE19F2AFFBA0100CF26C9 /* Utilities */,
+				EE5BE1A02AFFBA0800CF26C9 /* Resources */,
 				EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */,
 				EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */,
-				EE5BE1692AFFB5F700CF26C9 /* ViewController.swift */,
-				EE5BE16B2AFFB5F700CF26C9 /* Main.storyboard */,
-				EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */,
 				EE5BE1702AFFB5F700CF26C9 /* LaunchScreen.storyboard */,
 				EE5BE1732AFFB5F700CF26C9 /* Info.plist */,
 			);
@@ -127,6 +145,60 @@
 			path = "Doctor-AppointmentUITests";
 			sourceTree = "<group>";
 		};
+		EE5BE19F2AFFBA0100CF26C9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BE1B22AFFBA9400CF26C9 /* Scenes */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE5BE1A02AFFBA0800CF26C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BE1A62AFFBA3200CF26C9 /* Fonts */,
+				EE5BE1A12AFFBA1800CF26C9 /* Generated */,
+				EE5BE1AD2AFFBA5500CF26C9 /* Localization */,
+				EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */,
+				EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE5BE1A12AFFBA1800CF26C9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BE1A22AFFBA2000CF26C9 /* Strings+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		EE5BE1A62AFFBA3200CF26C9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEE96E082AFFD0ED008F20E4 /* Inter.ttf */,
+				EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE5BE1AD2AFFBA5500CF26C9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EE5BE1B22AFFBA9400CF26C9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */,
+				EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +206,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE5BE18C2AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-Appointment" */;
 			buildPhases = (
+				EE5BE1B42AFFBAC700CF26C9 /* swiftlint */,
+				EE5BE1B32AFFBAB300CF26C9 /* swiftgen */,
 				EE5BE15E2AFFB5F700CF26C9 /* Sources */,
 				EE5BE15F2AFFB5F700CF26C9 /* Frameworks */,
 				EE5BE1602AFFB5F700CF26C9 /* Resources */,
@@ -143,6 +217,9 @@
 			dependencies = (
 			);
 			name = "Doctor-Appointment";
+			packageProductDependencies = (
+				EE5BE1C22AFFC86A00CF26C9 /* Extensions */,
+			);
 			productName = "Doctor-Appointment";
 			productReference = EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +290,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EE5BE1592AFFB5F700CF26C9;
+			packageReferences = (
+				EE5BE1C12AFFC86A00CF26C9 /* XCLocalSwiftPackageReference "Doctor-Appointment/Packages/Extensions" */,
+			);
 			productRefGroup = EE5BE1632AFFB5F700CF26C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BE19D2AFFB9C900CF26C9 /* .swiftlint.yml in Resources */,
+				EEE96E092AFFD0ED008F20E4 /* Inter.ttf in Resources */,
+				EE5BE1C02AFFC4E300CF26C9 /* ViewController.xib in Resources */,
 				EE5BE1722AFFB5F700CF26C9 /* LaunchScreen.storyboard in Resources */,
 				EE5BE16F2AFFB5F700CF26C9 /* Assets.xcassets in Resources */,
-				EE5BE16D2AFFB5F700CF26C9 /* Main.storyboard in Resources */,
+				EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */,
+				EE5BE19E2AFFB9C900CF26C9 /* swiftgen.yml in Resources */,
+				EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +339,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EE5BE1B32AFFBAB300CF26C9 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi \n";
+		};
+		EE5BE1B42AFFBAC700CF26C9 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi \n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE5BE15E2AFFB5F700CF26C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5BE16A2AFFB5F700CF26C9 /* ViewController.swift in Sources */,
+				EE5BE1BF2AFFC4E300CF26C9 /* ViewController.swift in Sources */,
 				EE5BE1662AFFB5F700CF26C9 /* AppDelegate.swift in Sources */,
+				EE5BE1A32AFFBA2000CF26C9 /* Strings+Generated.swift in Sources */,
+				EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */,
 				EE5BE1682AFFB5F700CF26C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,20 +426,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE5BE16B2AFFB5F700CF26C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE5BE16C2AFFB5F700CF26C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE5BE1702AFFB5F700CF26C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EE5BE1712AFFB5F700CF26C9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE5BE1B72AFFBAF700CF26C9 /* en */,
+				EE5BE1B92AFFBAF800CF26C9 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,6 +451,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -353,7 +484,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -368,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -384,6 +515,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -416,7 +548,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -445,11 +577,13 @@
 				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Doctor-Appointment/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Doctor Appointment";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +607,13 @@
 				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Doctor-Appointment/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Doctor Appointment";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +743,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EE5BE1C12AFFC86A00CF26C9 /* XCLocalSwiftPackageReference "Doctor-Appointment/Packages/Extensions" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "Doctor-Appointment/Packages/Extensions";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE5BE1C22AFFC86A00CF26C9 /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Extensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE5BE15A2AFFB5F700CF26C9 /* Project object */;
 }

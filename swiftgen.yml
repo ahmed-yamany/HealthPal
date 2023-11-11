@@ -1,0 +1,10 @@
+input_dir: Doctor-Appointment/Resources/
+output_dir: Doctor-Appointment/Resources/Generated/
+
+strings:
+   inputs:
+     - Localization/en.lproj
+   outputs:
+     - templateName: structured-swift5
+       output: Strings+Generated.swift
+
