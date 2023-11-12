@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SplashCollectionViewCell" customModule="Doctor_Appointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="923"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="923"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EUm-4n-5BC">
+                        <rect key="frame" x="0.0" y="0.0" width="525" height="923"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-1" translatesAutoresizingMaskIntoConstraints="NO" id="zbd-2p-abS">
+                                <rect key="frame" x="0.0" y="0.0" width="525" height="804"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mv7-LK-UNq">
+                                <rect key="frame" x="0.0" y="820" width="525" height="103"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Doctors Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-r4-AC8" customClass="H3Label" customModule="Doctor_Appointment" customModuleProvider="target">
+                                        <rect key="frame" x="184.33333333333337" y="0.0" width="156.66666666666663" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="doap-700-374151"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with Specialized Doctors Online for Convenient and Comprehensive Medical Consultations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTN-xR-HhN" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="28.333333333333368" width="461" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="doap-500-6B7280"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="32" bottom="0.0" trailing="32"/>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EUm-4n-5BC" secondAttribute="trailing" id="BoD-D8-LZG"/>
+                <constraint firstItem="mv7-LK-UNq" firstAttribute="height" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.1" id="Hod-KY-Zmr"/>
+                <constraint firstAttribute="bottom" secondItem="EUm-4n-5BC" secondAttribute="bottom" id="IoF-33-5MG"/>
+                <constraint firstItem="EUm-4n-5BC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rtG-iZ-MBD"/>
+                <constraint firstItem="EUm-4n-5BC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xbV-9f-bJV"/>
+            </constraints>
+            <size key="customSize" width="525" height="923"/>
+            <connections>
+                <outlet property="imageView" destination="zbd-2p-abS" id="zYR-Jk-2PO"/>
+                <outlet property="subtitleLabel" destination="BTN-xR-HhN" id="19H-ps-yN9"/>
+                <outlet property="titleLable" destination="yXl-r4-AC8" id="IRa-sh-42m"/>
+            </connections>
+            <point key="canvasLocation" x="486.25954198473278" y="327.81690140845075"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="splash-1" width="390" height="540"/>
+        <namedColor name="doap-500-6B7280">
+            <color red="0.41960784313725491" green="0.44705882352941179" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-700-374151">
+            <color red="0.21568627450980393" green="0.25490196078431371" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

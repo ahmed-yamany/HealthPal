@@ -10,6 +10,17 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum Splash {
+    internal enum Button {
+      /// Localizable.strings
+      ///   Doctor-Appointment
+      /// 
+      ///   Created by Ahmed Yamany on 11/11/2023.
+      internal static let next = L10n.tr("Localizable", "splash.button.next", fallback: "Next")
+      /// Skip
+      internal static let skip = L10n.tr("Localizable", "splash.button.skip", fallback: "Skip")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

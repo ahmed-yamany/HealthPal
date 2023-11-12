@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE344CCD2B003EDB007E45D3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE344CCB2B003EDB007E45D3 /* SplashView.swift */; };
+		EE344CCE2B003EDB007E45D3 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE344CCC2B003EDB007E45D3 /* SplashView.xib */; };
 		EE5BE1662AFFB5F700CF26C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */; };
 		EE5BE1682AFFB5F700CF26C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */; };
 		EE5BE16F2AFFB5F700CF26C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */; };
@@ -20,9 +22,23 @@
 		EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */; };
 		EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */; };
 		EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */; };
-		EE5BE1BF2AFFC4E300CF26C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */; };
-		EE5BE1C02AFFC4E300CF26C9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */; };
-		EE5BE1C32AFFC86A00CF26C9 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = EE5BE1C22AFFC86A00CF26C9 /* Extensions */; };
+		EEC481BC2AFFEAA600EC52DF /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481B82AFFEAA600EC52DF /* SplashController.swift */; };
+		EEC481BD2AFFEAA600EC52DF /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481B92AFFEAA600EC52DF /* SplashViewModel.swift */; };
+		EEC481C92AFFEB9D00EC52DF /* SmallLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C32AFFEB9D00EC52DF /* SmallLabel.swift */; };
+		EEC481CA2AFFEB9D00EC52DF /* H1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C42AFFEB9D00EC52DF /* H1Label.swift */; };
+		EEC481CB2AFFEB9D00EC52DF /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C52AFFEB9D00EC52DF /* RegularLabel.swift */; };
+		EEC481CC2AFFEB9D00EC52DF /* MediumLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C62AFFEB9D00EC52DF /* MediumLabel.swift */; };
+		EEC481CD2AFFEB9D00EC52DF /* H2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C72AFFEB9D00EC52DF /* H2Label.swift */; };
+		EEC481CE2AFFEB9D00EC52DF /* H3Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C82AFFEB9D00EC52DF /* H3Label.swift */; };
+		EEC481D12AFFEE6B00EC52DF /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481D02AFFEE6B00EC52DF /* PrimaryButton.swift */; };
+		EEC481D42AFFEECF00EC52DF /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = EEC481D32AFFEECF00EC52DF /* Extensions */; };
+		EEC481D72AFFEEE000EC52DF /* MakeConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = EEC481D62AFFEEE000EC52DF /* MakeConstraints */; };
+		EEC481D92AFFF8F000EC52DF /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481D82AFFF8F000EC52DF /* RegularButton.swift */; };
+		EEC481DE2AFFFB7200EC52DF /* SplashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481DB2AFFFB7200EC52DF /* SplashCollectionViewCell.swift */; };
+		EEC481DF2AFFFB7200EC52DF /* SplashSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481DC2AFFFB7200EC52DF /* SplashSection.swift */; };
+		EEC481E02AFFFB7200EC52DF /* SplashCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC481DD2AFFFB7200EC52DF /* SplashCollectionViewCell.xib */; };
+		EEC481E32AFFFBF000EC52DF /* CompositionalLayoutableSection in Frameworks */ = {isa = PBXBuildFile; productRef = EEC481E22AFFFBF000EC52DF /* CompositionalLayoutableSection */; };
+		EEC481E52B000F8F00EC52DF /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481E42B000F8F00EC52DF /* SplashModel.swift */; };
 		EEE96E092AFFD0ED008F20E4 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEE96E082AFFD0ED008F20E4 /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE344CCB2B003EDB007E45D3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		EE344CCC2B003EDB007E45D3 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
 		EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Appointment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +80,20 @@
 		EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EE5BE1B72AFFBAF700CF26C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE5BE1B92AFFBAF800CF26C9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		EEC481B82AFFEAA600EC52DF /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		EEC481B92AFFEAA600EC52DF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		EEC481C32AFFEB9D00EC52DF /* SmallLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallLabel.swift; sourceTree = "<group>"; };
+		EEC481C42AFFEB9D00EC52DF /* H1Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H1Label.swift; sourceTree = "<group>"; };
+		EEC481C52AFFEB9D00EC52DF /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
+		EEC481C62AFFEB9D00EC52DF /* MediumLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumLabel.swift; sourceTree = "<group>"; };
+		EEC481C72AFFEB9D00EC52DF /* H2Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H2Label.swift; sourceTree = "<group>"; };
+		EEC481C82AFFEB9D00EC52DF /* H3Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H3Label.swift; sourceTree = "<group>"; };
+		EEC481D02AFFEE6B00EC52DF /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		EEC481D82AFFF8F000EC52DF /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
+		EEC481DB2AFFFB7200EC52DF /* SplashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCollectionViewCell.swift; sourceTree = "<group>"; };
+		EEC481DC2AFFFB7200EC52DF /* SplashSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashSection.swift; sourceTree = "<group>"; };
+		EEC481DD2AFFFB7200EC52DF /* SplashCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashCollectionViewCell.xib; sourceTree = "<group>"; };
+		EEC481E42B000F8F00EC52DF /* SplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModel.swift; sourceTree = "<group>"; };
 		EEE96E082AFFD0ED008F20E4 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5BE1C32AFFC86A00CF26C9 /* Extensions in Frameworks */,
+				EEC481D42AFFEECF00EC52DF /* Extensions in Frameworks */,
+				EEC481E32AFFFBF000EC52DF /* CompositionalLayoutableSection in Frameworks */,
+				EEC481D72AFFEEE000EC52DF /* MakeConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +180,7 @@
 		EE5BE19F2AFFBA0100CF26C9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EEC481BF2AFFEB7700EC52DF /* Custom Views */,
 				EE5BE1B22AFFBA9400CF26C9 /* Scenes */,
 			);
 			path = Utilities;
@@ -193,10 +226,71 @@
 		EE5BE1B22AFFBA9400CF26C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EE5BE1BD2AFFC4E300CF26C9 /* ViewController.swift */,
-				EE5BE1BE2AFFC4E300CF26C9 /* ViewController.xib */,
+				EEC481B52AFFE9CB00EC52DF /* Onboarding */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EEC481B52AFFE9CB00EC52DF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481B62AFFEA5300EC52DF /* Splash */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EEC481B62AFFEA5300EC52DF /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481DA2AFFFB6000EC52DF /* CollectionView Section */,
+				EEC481E42B000F8F00EC52DF /* SplashModel.swift */,
+				EE344CCB2B003EDB007E45D3 /* SplashView.swift */,
+				EE344CCC2B003EDB007E45D3 /* SplashView.xib */,
+				EEC481B92AFFEAA600EC52DF /* SplashViewModel.swift */,
+				EEC481B82AFFEAA600EC52DF /* SplashController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EEC481BF2AFFEB7700EC52DF /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481CF2AFFEE5900EC52DF /* Buttons */,
+				EEC481C22AFFEB9200EC52DF /* Labels */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EEC481C22AFFEB9200EC52DF /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481C42AFFEB9D00EC52DF /* H1Label.swift */,
+				EEC481C72AFFEB9D00EC52DF /* H2Label.swift */,
+				EEC481C82AFFEB9D00EC52DF /* H3Label.swift */,
+				EEC481C62AFFEB9D00EC52DF /* MediumLabel.swift */,
+				EEC481C52AFFEB9D00EC52DF /* RegularLabel.swift */,
+				EEC481C32AFFEB9D00EC52DF /* SmallLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EEC481CF2AFFEE5900EC52DF /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481D02AFFEE6B00EC52DF /* PrimaryButton.swift */,
+				EEC481D82AFFF8F000EC52DF /* RegularButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EEC481DA2AFFFB6000EC52DF /* CollectionView Section */ = {
+			isa = PBXGroup;
+			children = (
+				EEC481DC2AFFFB7200EC52DF /* SplashSection.swift */,
+				EEC481DB2AFFFB7200EC52DF /* SplashCollectionViewCell.swift */,
+				EEC481DD2AFFFB7200EC52DF /* SplashCollectionViewCell.xib */,
+			);
+			path = "CollectionView Section";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +312,9 @@
 			);
 			name = "Doctor-Appointment";
 			packageProductDependencies = (
-				EE5BE1C22AFFC86A00CF26C9 /* Extensions */,
+				EEC481D32AFFEECF00EC52DF /* Extensions */,
+				EEC481D62AFFEEE000EC52DF /* MakeConstraints */,
+				EEC481E22AFFFBF000EC52DF /* CompositionalLayoutableSection */,
 			);
 			productName = "Doctor-Appointment";
 			productReference = EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */;
@@ -294,7 +390,9 @@
 			);
 			mainGroup = EE5BE1592AFFB5F700CF26C9;
 			packageReferences = (
-				EE5BE1C12AFFC86A00CF26C9 /* XCLocalSwiftPackageReference "Doctor-Appointment/Packages/Extensions" */,
+				EEC481D22AFFEECF00EC52DF /* XCLocalSwiftPackageReference "Packages/Extensions" */,
+				EEC481D52AFFEEE000EC52DF /* XCLocalSwiftPackageReference "Packages/MakeConstraints" */,
+				EEC481E12AFFFBF000EC52DF /* XCLocalSwiftPackageReference "Packages/CompositionalLayoutableSection" */,
 			);
 			productRefGroup = EE5BE1632AFFB5F700CF26C9 /* Products */;
 			projectDirPath = "";
@@ -313,8 +411,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5BE19D2AFFB9C900CF26C9 /* .swiftlint.yml in Resources */,
+				EE344CCE2B003EDB007E45D3 /* SplashView.xib in Resources */,
+				EEC481E02AFFFB7200EC52DF /* SplashCollectionViewCell.xib in Resources */,
 				EEE96E092AFFD0ED008F20E4 /* Inter.ttf in Resources */,
-				EE5BE1C02AFFC4E300CF26C9 /* ViewController.xib in Resources */,
 				EE5BE1722AFFB5F700CF26C9 /* LaunchScreen.storyboard in Resources */,
 				EE5BE16F2AFFB5F700CF26C9 /* Assets.xcassets in Resources */,
 				EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */,
@@ -385,11 +484,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5BE1BF2AFFC4E300CF26C9 /* ViewController.swift in Sources */,
+				EEC481CB2AFFEB9D00EC52DF /* RegularLabel.swift in Sources */,
+				EEC481E52B000F8F00EC52DF /* SplashModel.swift in Sources */,
+				EEC481CD2AFFEB9D00EC52DF /* H2Label.swift in Sources */,
+				EEC481DF2AFFFB7200EC52DF /* SplashSection.swift in Sources */,
 				EE5BE1662AFFB5F700CF26C9 /* AppDelegate.swift in Sources */,
 				EE5BE1A32AFFBA2000CF26C9 /* Strings+Generated.swift in Sources */,
+				EEC481D92AFFF8F000EC52DF /* RegularButton.swift in Sources */,
+				EEC481DE2AFFFB7200EC52DF /* SplashCollectionViewCell.swift in Sources */,
+				EEC481CA2AFFEB9D00EC52DF /* H1Label.swift in Sources */,
+				EEC481D12AFFEE6B00EC52DF /* PrimaryButton.swift in Sources */,
+				EEC481CC2AFFEB9D00EC52DF /* MediumLabel.swift in Sources */,
 				EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */,
+				EEC481C92AFFEB9D00EC52DF /* SmallLabel.swift in Sources */,
 				EE5BE1682AFFB5F700CF26C9 /* SceneDelegate.swift in Sources */,
+				EEC481BC2AFFEAA600EC52DF /* SplashController.swift in Sources */,
+				EEC481CE2AFFEB9D00EC52DF /* H3Label.swift in Sources */,
+				EEC481BD2AFFEAA600EC52DF /* SplashViewModel.swift in Sources */,
+				EE344CCD2B003EDB007E45D3 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,16 +857,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		EE5BE1C12AFFC86A00CF26C9 /* XCLocalSwiftPackageReference "Doctor-Appointment/Packages/Extensions" */ = {
+		EEC481D22AFFEECF00EC52DF /* XCLocalSwiftPackageReference "Packages/Extensions" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "Doctor-Appointment/Packages/Extensions";
+			relativePath = Packages/Extensions;
+		};
+		EEC481D52AFFEEE000EC52DF /* XCLocalSwiftPackageReference "Packages/MakeConstraints" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/MakeConstraints;
+		};
+		EEC481E12AFFFBF000EC52DF /* XCLocalSwiftPackageReference "Packages/CompositionalLayoutableSection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CompositionalLayoutableSection;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EE5BE1C22AFFC86A00CF26C9 /* Extensions */ = {
+		EEC481D32AFFEECF00EC52DF /* Extensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Extensions;
+		};
+		EEC481D62AFFEEE000EC52DF /* MakeConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MakeConstraints;
+		};
+		EEC481E22AFFFBF000EC52DF /* CompositionalLayoutableSection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CompositionalLayoutableSection;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
