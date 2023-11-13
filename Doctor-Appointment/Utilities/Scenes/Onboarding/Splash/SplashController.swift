@@ -39,7 +39,7 @@ private extension SplashController {
     func updateSplashView(with items: [SplashModel]) {
         updateSplashItems(items)
         updateNumberOfPages(with: items.count)
-        subscribeToCurrentPage()
+        subscribeToCurrentPageIndex()
         subscribeToSkip()
     }
     //
@@ -53,8 +53,8 @@ private extension SplashController {
         splashView.pageControl.numberOfPages = number
     }
     //
-    func subscribeToCurrentPage() {
-        viewModel.$currentPage.sink { [unowned self] currentPage in
+    func subscribeToCurrentPageIndex() {
+        viewModel.$currentPageIndex.sink { [unowned self] currentPage in
             if currentPage < viewModel.numberOfPages {
                 splashView.selectPage(at: currentPage)
             } else {
@@ -64,12 +64,16 @@ private extension SplashController {
         .store(in: &viewModel.cancellableSet)
     }
     //
-    private func subscribeToSkip() {
+    func subscribeToSkip() {
         viewModel.$skip
             .filter { $0 == true }
-            .sink { value in
-                print(value)
+            .sink { [unowned self] _ in
+                navigateToLogin()
             }
             .store(in: &viewModel.cancellableSet)
+    }
+    func navigateToLogin() {
+        let loginVC = AppCoordinator.shared.login()
+        present(loginVC, animated: true)
     }
 }

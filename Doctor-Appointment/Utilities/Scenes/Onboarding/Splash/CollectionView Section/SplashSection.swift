@@ -59,7 +59,7 @@ extension SplashCollectionViewSection: CompositionalLayoutableSectionLayout {
         //
         section.visibleItemsInvalidationHandler = {
             self.currentPageDidChanged(withItems: $0, offset: $1, layoutEnvironment: $2) { currentPage in
-                self.viewModel.currentPage = currentPage
+                self.viewModel.currentPageIndex = currentPage
             }
         }
         //

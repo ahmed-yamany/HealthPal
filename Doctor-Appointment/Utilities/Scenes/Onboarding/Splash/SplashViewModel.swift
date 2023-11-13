@@ -13,7 +13,7 @@ import Combine
 class SplashViewModel {
     var numberOfPages: Int = 0
     //
-    @Published var currentPage: Int = 0
+    @Published var currentPageIndex: Int = 0
     @Published var skip: Bool = false
     //
     var cancellableSet: Set<AnyCancellable> = []

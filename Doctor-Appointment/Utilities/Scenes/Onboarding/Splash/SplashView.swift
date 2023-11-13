@@ -60,8 +60,8 @@ private extension SplashView {
     }
     //
     func moveToNextPage() {
-        viewModel.currentPage += 1
-        let indexPath = IndexPath(item: viewModel.currentPage, section: 0)
+        viewModel.currentPageIndex += 1
+        let indexPath = IndexPath(item: viewModel.currentPageIndex, section: 0)
         collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .right)
     }
 }
