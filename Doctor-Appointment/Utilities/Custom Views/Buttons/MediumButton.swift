@@ -1,12 +1,13 @@
 //
-//  RegularButton.swift
+//  MediumButton.swift
 //  Doctor-Appointment
 //
-//  Created by Ahmed Yamany on 11/11/2023.
+//  Created by Ahmed Yamany on 14/11/2023.
 //
+
 import UIKit
 
-class RegularButton: UIButton {
+class MediumButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -17,9 +18,9 @@ class RegularButton: UIButton {
     }
     //
     private func setup() {
-        setTitleColor(.doap500, for: .normal)
+        setTitleColor(.systemBlue, for: .normal)
         //
         configuration = nil
-        titleLabel?.font = .regular
+        titleLabel?.font = .medium
     }
 }

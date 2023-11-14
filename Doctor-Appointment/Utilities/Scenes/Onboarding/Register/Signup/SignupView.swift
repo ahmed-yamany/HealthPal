@@ -26,9 +26,6 @@ class SignupView: UIView {
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
     }
-    @IBAction func buttonTapped(_ sender: Any) {
-        delegate.signupButtonTapped()
-    }
 }
 //
 // MARK: - Configurations
@@ -39,6 +36,12 @@ private extension SignupView {
 //
 // MARK: - Actions
 private extension SignupView {
+    @IBAction func signupButtonTapped(_ sender: UIButton) {
+        delegate.signupButtonTapped()
+    }
+    @IBAction func signinButtonTapped(_ sender: UIButton) {
+        delegate.signinButtonTapped()
+    }
 }
 //
 private extension SignupView {

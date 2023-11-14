@@ -36,12 +36,13 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="A6k-oy-GBx">
                             <rect key="frame" x="0.0" y="432" width="413" height="164"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I50-t9-erg" customClass="PrimaryButton" customModule="Doctor_Appointment" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I50-t9-erg" userLabel="Next Button" customClass="PrimaryButton" customModule="Doctor_Appointment" customModuleProvider="target">
                                     <rect key="frame" x="32" y="0.0" width="349" height="8"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="Button"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="localized" value="splash.button.next"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localize" value="splash.button.next"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="YMp-G4-Ag6"/>
@@ -55,7 +56,7 @@
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="pageTintColor">
-                                            <color key="value" name="doap-500-6B7280"/>
+                                            <color key="value" name="doap-500"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="currentPageTintColor">
                                             <color key="value" name="doap-main"/>
@@ -80,12 +81,13 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Ue-ku-zqe">
                                     <rect key="frame" x="32" y="84" width="349" height="30"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-0w-dew" customClass="RegularButton" customModule="Doctor_Appointment" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-0w-dew" userLabel="skip Button" customClass="RegularButton" customModule="Doctor_Appointment" customModuleProvider="target">
                                             <rect key="frame" x="151.66666666666666" y="0.0" width="46" height="30"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Button"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="localized" value="splash.button.skip"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localize" value="splash.button.skip"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="C20-6k-1UL"/>
@@ -113,7 +115,7 @@
         </view>
     </objects>
     <resources>
-        <namedColor name="doap-500-6B7280">
+        <namedColor name="doap-500">
             <color red="0.41960784313725491" green="0.44705882352941179" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="doap-main">

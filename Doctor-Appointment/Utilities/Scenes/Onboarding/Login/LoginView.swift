@@ -14,9 +14,11 @@ class LoginView: UIView {
     //
     // MARK: - Properties
     let viewModel: LoginViewModel
+    let delegate: LoginViewDelegate
     // MARK: Init
-    init(viewModel: LoginViewModel) {
+    init(viewModel: LoginViewModel, delegate: LoginViewDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
         configureUI()
@@ -34,6 +36,17 @@ private extension LoginView {
 //
 // MARK: - Actions
 private extension LoginView {
+    @IBAction func signinButtonTapped(_ sender: PrimaryButton) {
+        delegate.signinButtonTapped()
+    }
+    //
+    @IBAction func forgotPasswordTapped(_ sender: MediumButton) {
+        delegate.forgotPasswordTapped()
+    }
+    //
+    @IBAction func signupButtonTapped(_ sender: MediumButton) {
+        delegate.signupButtonTapped()
+    }
 }
 //
 private extension LoginView {

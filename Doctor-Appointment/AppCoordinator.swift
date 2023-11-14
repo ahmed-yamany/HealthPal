@@ -27,21 +27,19 @@ final class AppCoordinator {
         }
     }
     ///
-    public func login() -> UIViewController {
-        let coordinator = Coordinator(navigationControllerType: UINavigationController.self)
+    public func login() {
+        let coordinator = Coordinator(navigationControllerType: DoapNavigationController.self)
         //
         coordinator.setCoordinatorTypes([LoginController.self])
-        coordinator.navigationController.modalPresentationStyle = .fullScreen
         //
-        return coordinator.navigationController
+        window?.rootViewController = coordinator.navigationController
     }
     ///
-    public func register() -> UIViewController {
-        let coordinator = Coordinator(navigationControllerType: UINavigationController.self)
+    public func register() {
+        let coordinator = Coordinator(navigationControllerType: DoapNavigationController.self)
         //
         coordinator.setCoordinatorTypes([SignupController.self, CreateProfileController.self])
-        coordinator.navigationController.modalPresentationStyle = .fullScreen
         //
-        return coordinator.navigationController
+        window?.rootViewController = coordinator.navigationController
     }
 }

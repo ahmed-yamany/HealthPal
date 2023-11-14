@@ -37,5 +37,6 @@ extension CreateProfileController: CreateProfileViewDelegate {
 // MARK: - Private Handlers
 private extension CreateProfileController {
     func handlerPrivates() {
+        navigationItem.setTitle(L10n.Profile.title)
     }
 }

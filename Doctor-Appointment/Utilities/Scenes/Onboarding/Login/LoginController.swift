@@ -8,9 +8,15 @@
 import UIKit
 import Extensions
 
+protocol LoginViewDelegate {
+    func signinButtonTapped()
+    func forgotPasswordTapped()
+    func signupButtonTapped()
+}
+//
 class LoginController: CoordinatorViewController {
     // MARK: - View
-    lazy var loginView = LoginView(viewModel: viewModel)
+    lazy var loginView = LoginView(viewModel: viewModel, delegate: self)
     //
     // MARK: - Properties
     let viewModel = LoginViewModel()
@@ -20,6 +26,19 @@ class LoginController: CoordinatorViewController {
         super.viewDidLoad()
         self.view = loginView
         handlerPrivates()
+    }
+}
+//
+// MARK: - SignupViewDelegate
+extension LoginController: LoginViewDelegate {
+    func signinButtonTapped() {
+    }
+    //
+    func forgotPasswordTapped() {
+    }
+    //
+    func signupButtonTapped() {
+        AppCoordinator.shared.register()
     }
 }
 //

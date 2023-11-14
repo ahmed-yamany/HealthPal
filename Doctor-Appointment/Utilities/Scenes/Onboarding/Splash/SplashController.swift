@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol SplashViewDelegate {
+    func nextButtonDidTapped()
+    func skipButtonDidTapped()
+}
+//
 class SplashController: UIViewController {
     // MARK: - Outlets
-    lazy var splashView = SplashView(viewModel: viewModel)
+    lazy var splashView = SplashView(delegate: self)
     //
     // MARK: - Properties
     let viewModel = SplashViewModel()
@@ -28,19 +33,18 @@ private extension SplashController {
     func featchSplashesAndUpdateView() {
         Task { [unowned self] in
             do {
-                let items = try await viewModel.getSplashes()
-                updateSplashView(with: items)
+                let splashes = try await viewModel.getSplashes()
+                updateSplashView(with: splashes)
             } catch {
                 // Handel Error Here
             }
         }
     }
     //
-    func updateSplashView(with items: [SplashModel]) {
-        updateSplashItems(items)
-        updateNumberOfPages(with: items.count)
-        subscribeToCurrentPageIndex()
-        subscribeToSkip()
+    func updateSplashView(with splashes: [SplashModel]) {
+        viewModel.splashes = splashes
+        updateSplashItems(splashes)
+        updateNumberOfPages(with: splashes.count)
     }
     //
     func updateSplashItems(_ items: [SplashModel]) {
@@ -49,31 +53,34 @@ private extension SplashController {
     }
     //
     func updateNumberOfPages(with number: Int) {
-        viewModel.numberOfPages = number
         splashView.pageControl.numberOfPages = number
     }
-    //
-    func subscribeToCurrentPageIndex() {
-        viewModel.$currentPageIndex.sink { [unowned self] currentPage in
-            if currentPage < viewModel.numberOfPages {
-                splashView.selectPage(at: currentPage)
-            } else {
-                viewModel.skip = true
-            }
+}
+///
+extension SplashController: SplashViewDelegate {
+    func nextButtonDidTapped() {
+        viewModel.currentPageIndex += 1
+        //
+        if viewModel.isLastPage() {
+            enableUserInteractionOnCollectionView()
         }
-        .store(in: &viewModel.cancellableSet)
+        //
+        if viewModel.hasMorePages() {
+            splashView.selectPage(at: viewModel.currentPageIndex)
+        } else {
+            skipButtonDidTapped()
+        }
     }
     //
-    func subscribeToSkip() {
-        viewModel.$skip
-            .filter { $0 == true }
-            .sink { [unowned self] _ in
-                navigateToLogin()
-            }
-            .store(in: &viewModel.cancellableSet)
+    func skipButtonDidTapped() {
+        navigateToLogin()
     }
+    //
     func navigateToLogin() {
-        let loginVC = AppCoordinator.shared.login()
-        present(loginVC, animated: true)
+        AppCoordinator.shared.login()
+    }
+    //
+    private func enableUserInteractionOnCollectionView() {
+        splashView.collectionView.isUserInteractionEnabled = true
     }
 }

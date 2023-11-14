@@ -15,17 +15,17 @@ class SplashView: UIView, CompositionalLayoutProvider {
     @IBOutlet weak var pageControl: FlexiblePageControl!
     //
     // MARK: - Properties
-    let viewModel: SplashViewModel
+    let delegate: SplashViewDelegate
     ///
     var compositionalLayoutSections: [CompositionalLayoutableSection] = []
-    lazy var collectionViewSection = SplashCollectionViewSection(viewModel: viewModel)
+    let collectionViewSection = SplashCollectionViewSection()
     ///
-    lazy var delegate = CompositionalLayoutDelegate(provider: self)
-    lazy var dataSource = CompositionalLayoutDataSource(provider: self)
+    lazy var collectionViewDelegate = CompositionalLayoutDelegate(provider: self)
+    lazy var collectionViewDataSource = CompositionalLayoutDataSource(provider: self)
     //
     // MARK: Init
-    init(viewModel: SplashViewModel) {
-        self.viewModel = viewModel
+    init(delegate: SplashViewDelegate) {
+        self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
         configureUI()
@@ -35,15 +35,18 @@ class SplashView: UIView, CompositionalLayoutProvider {
     }
     public func selectPage(at index: Int) {
         pageControl.currentPage = index
+        let indexPath = IndexPath(item: index, section: 0)
+        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .right)
     }
 }
 //
 // MARK: - Configurations
 private extension SplashView {
     func configureUI() {
-        collectionView.delegate = delegate
-        collectionView.dataSource = dataSource
+        collectionView.delegate = collectionViewDelegate
+        collectionView.dataSource = collectionViewDataSource
         collectionView.isScrollEnabled = false
+        collectionView.isUserInteractionEnabled = false
         //
         compositionalLayoutSections.append(collectionViewSection)
         collectionView.updateCollectionViewCompositionalLayout(for: self)
@@ -56,13 +59,11 @@ private extension SplashView {
         moveToNextPage()
     }
     @IBAction func skipButtonTapped(_ sender: RegularButton) {
-        viewModel.skip = true
+        delegate.skipButtonDidTapped()
     }
     //
     func moveToNextPage() {
-        viewModel.currentPageIndex += 1
-        let indexPath = IndexPath(item: viewModel.currentPageIndex, section: 0)
-        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .right)
+        delegate.nextButtonDidTapped()
     }
 }
 //

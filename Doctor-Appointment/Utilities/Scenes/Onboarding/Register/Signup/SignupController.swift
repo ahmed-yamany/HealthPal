@@ -10,6 +10,7 @@ import Extensions
 
 protocol SignupViewDelegate {
     func signupButtonTapped()
+    func signinButtonTapped()
 }
 //
 class SignupController: CoordinatorViewController {
@@ -31,6 +32,9 @@ class SignupController: CoordinatorViewController {
 extension SignupController: SignupViewDelegate {
     func signupButtonTapped() {
         coordinator.push()
+    }
+    func signinButtonTapped() {
+        AppCoordinator.shared.login()
     }
 }
 //

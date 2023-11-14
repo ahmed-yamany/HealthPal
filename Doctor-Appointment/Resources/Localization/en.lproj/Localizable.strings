@@ -6,5 +6,31 @@
   
 */
 
+"socialMedia.google" = "Sign In with Google";
+"socialMedia.facebook" = "Sign In with Facebook";
+//
 "splash.button.next" = "Next";
 "splash.button.skip" = "Skip";
+//
+"login.logo.title" = "Hi, Welcome Back! ";
+"login.logo.subtitle" = "Hope you’re doing fine.";
+"login.button" = "Sign In";
+"login.textField.email" = "Your Email";
+"login.textField.password" = "Password";
+"login.forgotPassword" = "Forgot Password?";
+"login.signup.label" = "Don’t have an account yet?";
+"login.signup.button" = "Sign up";
+//
+"signup.logo.title" = "Create Account";
+"signup.logo.subtitle" = "We are here to help you!";
+"signup.button" = "Create Account";
+"signup.textField.name" = "Your Name";
+"signup.textField.email" = "Your Email";
+"signup.textField.password" = "Password";
+"signup.login.label" = "Do have an account?";
+"signup.login.button" = "Sign in";
+//
+"profile.title" = "Fill Your Profile";
+"profile.textfield.name" = "Michael Jordan";
+"profile.textfield.nickname" = "Nickname";
+"profile.textfield.email" = "name@example.com";

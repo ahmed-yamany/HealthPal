@@ -11,10 +11,8 @@ import Combine
 // MARK: SplashViewModel
 //
 class SplashViewModel {
-    var numberOfPages: Int = 0
-    //
     @Published var currentPageIndex: Int = 0
-    @Published var skip: Bool = false
+    @Published var splashes: [SplashModel] = []
     //
     var cancellableSet: Set<AnyCancellable> = []
     //
@@ -26,5 +24,13 @@ class SplashViewModel {
             .init(image: "splash-3", title: "Thousands of Online Specialists", subTitle: " Explore a Vast Array of Online Medical Specialists, Offering an Extensive Range of Expertise Tailored to Your Healthcare Needs.")
             // swiftlint: enable all
         ]
+    }
+    //
+    func hasMorePages() -> Bool {
+        currentPageIndex < splashes.count
+    }
+    //
+    func isLastPage() -> Bool {
+        !(currentPageIndex < splashes.count - 1)
     }
 }

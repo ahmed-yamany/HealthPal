@@ -27,16 +27,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mv7-LK-UNq">
                                 <rect key="frame" x="0.0" y="784.66666666666663" width="525" height="138.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Doctors Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-r4-AC8" customClass="H3Label" customModule="Doctor_Appointment" customModuleProvider="target">
-                                        <rect key="frame" x="184.33333333333337" y="0.0" width="156.66666666666663" height="30.666666666666668"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-r4-AC8" customClass="H3Label" customModule="Doctor_Appointment" customModuleProvider="target">
+                                        <rect key="frame" x="246" y="0.0" width="33" height="43.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="doap-700-374151"/>
+                                        <color key="textColor" name="doap-700"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect with Specialized Doctors Online for Convenient and Comprehensive Medical Consultations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTN-xR-HhN" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="38.66666666666675" width="461" height="65.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtitile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTN-xR-HhN" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                        <rect key="frame" x="232.33333333333334" y="51.666666666666742" width="60.333333333333343" height="52.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" name="doap-500-6B7280"/>
+                                        <color key="textColor" name="doap-500"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -65,10 +65,10 @@
     </objects>
     <resources>
         <image name="splash-1" width="390" height="540"/>
-        <namedColor name="doap-500-6B7280">
+        <namedColor name="doap-500">
             <color red="0.41960784313725491" green="0.44705882352941179" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="doap-700-374151">
+        <namedColor name="doap-700">
             <color red="0.21568627450980393" green="0.25490196078431371" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

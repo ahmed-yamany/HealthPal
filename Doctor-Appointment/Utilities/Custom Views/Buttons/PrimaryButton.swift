@@ -26,7 +26,7 @@ class PrimaryButton: UIButton {
         layerCornerRadius = height / 2
         //
         backgroundColor = .doapMain
-        setTitleColor(.doap50F9FAFB, for: .normal)
+        setTitleColor(.doap50, for: .normal)
         //
         configuration = nil
         titleLabel?.font = .medium

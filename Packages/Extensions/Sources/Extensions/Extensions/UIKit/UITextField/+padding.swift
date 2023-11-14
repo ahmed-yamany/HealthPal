@@ -54,15 +54,19 @@ extension UITextField {
     private func createIconView(from image: UIImage?, padding: CGFloat, tintColor: UIColor) -> UIView {
         let view = UIView()
         let imageView = UIImageView(image: image)
+        //
+        view.translatesAutoresizingMaskIntoConstraints = false
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        //
         imageView.tintColor = tintColor
+        view.addSubview(imageView)
         //
         view.widthAnchor.constraint(equalToConstant: imageView.bounds.width + padding).isActive = true
         view.heightAnchor.constraint(equalTo: imageView.heightAnchor).isActive = true
         //
-        view.addSubview(imageView)
         //
         imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         return view
     }
 }

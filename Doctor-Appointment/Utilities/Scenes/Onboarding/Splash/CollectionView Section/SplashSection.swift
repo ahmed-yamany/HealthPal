@@ -15,9 +15,7 @@ class SplashCollectionViewSection: CompositionalLayoutableSection {
     //
     var items: [ItemsType] = []
     //
-    let viewModel: SplashViewModel
-    init(viewModel: SplashViewModel) {
-        self.viewModel = viewModel
+    override init() {
         super.init()
         delegate = self
         dataSource = self
@@ -56,13 +54,6 @@ extension SplashCollectionViewSection: CompositionalLayoutableSectionLayout {
     func sectionLayout(at index: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection {
         let section = NSCollectionLayoutSection(group: groupLayoutInSection)
         section.orthogonalScrollingBehavior = .groupPaging
-        //
-        section.visibleItemsInvalidationHandler = {
-            self.currentPageDidChanged(withItems: $0, offset: $1, layoutEnvironment: $2) { currentPage in
-                self.viewModel.currentPageIndex = currentPage
-            }
-        }
-        //
         return section
     }
 }
@@ -72,4 +63,5 @@ extension SplashCollectionViewSection: CompositionalLayoutableSectionDelegate {
     func registerCell(_ collectionView: UICollectionView) {
         collectionView.registerFromNib(CellType.self)
     }
+//    collection
 }

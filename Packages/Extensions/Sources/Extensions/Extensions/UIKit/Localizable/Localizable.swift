@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol Localizable {
-    var localized: String { get }
+public protocol Localizable {
+    var localize: String { get }
 }
 
 extension UILabel: Localizable {
     @IBInspectable
-    var localized: String {
+    public var localize: String {
         get {
             text ?? ""
         } set {
@@ -24,7 +24,7 @@ extension UILabel: Localizable {
 
 extension UIButton: Localizable {
     @IBInspectable
-    var localized: String {
+    public var localize: String {
         get {
             titleLabel?.text ?? ""
         } set {
@@ -35,7 +35,8 @@ extension UIButton: Localizable {
 }
 
 extension UITextField: Localizable {
-    var localized: String {
+    @IBInspectable
+    public var localize: String {
         get {
             placeholder ?? ""
         } set {
