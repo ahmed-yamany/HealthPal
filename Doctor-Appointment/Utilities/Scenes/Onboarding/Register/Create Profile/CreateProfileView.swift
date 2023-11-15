@@ -26,8 +26,8 @@ class CreateProfileView: UIView {
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
     }
-    @IBAction func buttonTapped(_ sender: Any) {
-        delegate.nextButtonTapped()
+    @IBAction func saveButtonTapped(_ sender: PrimaryButton) {
+        delegate.saveButtonTapped()
     }
 }
 //

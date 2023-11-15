@@ -31,6 +31,9 @@
 "signup.login.button" = "Sign in";
 //
 "profile.title" = "Fill Your Profile";
+"profile.button" = "Save";
 "profile.textfield.name" = "Michael Jordan";
 "profile.textfield.nickname" = "Nickname";
 "profile.textfield.email" = "name@example.com";
+"profile.textfield.date" = "Date of Birth";
+"profile.textfield.gender" = "Gender";

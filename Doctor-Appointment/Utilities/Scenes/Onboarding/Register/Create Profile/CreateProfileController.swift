@@ -9,7 +9,7 @@ import UIKit
 import Extensions
 
 protocol CreateProfileViewDelegate {
-    func nextButtonTapped()
+    func saveButtonTapped()
 }
 //
 class CreateProfileController: CoordinatorViewController {
@@ -29,7 +29,7 @@ class CreateProfileController: CoordinatorViewController {
 //
 // MARK: - SignupViewDelegate
 extension CreateProfileController: CreateProfileViewDelegate {
-    func nextButtonTapped() {
+    func saveButtonTapped() {
         coordinator.push()
     }
 }

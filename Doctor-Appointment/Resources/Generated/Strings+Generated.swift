@@ -35,11 +35,17 @@ internal enum L10n {
     }
   }
   internal enum Profile {
+    /// Save
+    internal static let button = L10n.tr("Localizable", "profile.button", fallback: "Save")
     /// Fill Your Profile
     internal static let title = L10n.tr("Localizable", "profile.title", fallback: "Fill Your Profile")
     internal enum Textfield {
+      /// Date of Birth
+      internal static let date = L10n.tr("Localizable", "profile.textfield.date", fallback: "Date of Birth")
       /// name@example.com
       internal static let email = L10n.tr("Localizable", "profile.textfield.email", fallback: "name@example.com")
+      /// Gender
+      internal static let gender = L10n.tr("Localizable", "profile.textfield.gender", fallback: "Gender")
       /// Michael Jordan
       internal static let name = L10n.tr("Localizable", "profile.textfield.name", fallback: "Michael Jordan")
       /// Nickname

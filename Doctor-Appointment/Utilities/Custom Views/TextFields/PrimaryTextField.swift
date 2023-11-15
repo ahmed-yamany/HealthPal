@@ -22,9 +22,16 @@ class PrimaryTextField: UITextField {
             }
         }
     }
+    @IBInspectable
+    var righIcon: UIImage? {
+        didSet {
+            if righIcon != nil {
+                addPaddingRightIcon(righIcon, padding: 20, tintColor: .doap400)
+            }
+        }
+    }
     //
     // MARK: Init
-    //
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureUI()

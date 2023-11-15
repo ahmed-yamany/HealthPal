@@ -13,15 +13,14 @@
 		EE5BE1682AFFB5F700CF26C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */; };
 		EE5BE16F2AFFB5F700CF26C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */; };
 		EE5BE1722AFFB5F700CF26C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1702AFFB5F700CF26C9 /* LaunchScreen.storyboard */; };
-		EE5BE17D2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE17C2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift */; };
-		EE5BE1872AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1862AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift */; };
-		EE5BE1892AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1882AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift */; };
 		EE5BE19D2AFFB9C900CF26C9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */; };
 		EE5BE19E2AFFB9C900CF26C9 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */; };
 		EE5BE1A32AFFBA2000CF26C9 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A22AFFBA2000CF26C9 /* Strings+Generated.swift */; };
 		EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */; };
 		EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */; };
 		EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */; };
+		EE62060D2B04D6FD00B74237 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060C2B04D6FD00B74237 /* DateTextField.swift */; };
+		EE62060F2B04DB3800B74237 /* GenderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060E2B04DB3800B74237 /* GenderTextField.swift */; };
 		EE70AC692B02B208003B4DA3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70AC652B02B208003B4DA3 /* LoginController.swift */; };
 		EE70AC6A2B02B208003B4DA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70AC662B02B208003B4DA3 /* LoginView.swift */; };
 		EE70AC6B2B02B208003B4DA3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70AC672B02B208003B4DA3 /* LoginViewModel.swift */; };
@@ -76,38 +75,14 @@
 		EEFD04972B013C9400D303B7 /* NewPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFD04932B013C9400D303B7 /* NewPasswordView.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EE5BE1792AFFB5F800CF26C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE5BE15A2AFFB5F700CF26C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE5BE1612AFFB5F700CF26C9;
-			remoteInfo = "Doctor-Appointment";
-		};
-		EE5BE1832AFFB5F800CF26C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EE5BE15A2AFFB5F700CF26C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EE5BE1612AFFB5F700CF26C9;
-			remoteInfo = "Doctor-Appointment";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		EE04B7872B03B26B00675E2E /* DoctorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DoctorUITests.xctest; path = "/Users/ahmed-yamany/Desktop/Doctor-Appointment/build/Debug-iphoneos/DoctorUITests.xctest"; sourceTree = "<absolute>"; };
 		EE344CCB2B003EDB007E45D3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EE344CCC2B003EDB007E45D3 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
-		EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Doctor-Appointment.app"; path = "/Users/ahmed-yamany/Desktop/Doctor-Appointment/build/Debug-iphoneos/Doctor-Appointment.app"; sourceTree = "<absolute>"; };
 		EE5BE1652AFFB5F700CF26C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5BE1672AFFB5F700CF26C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE5BE16E2AFFB5F700CF26C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE5BE1712AFFB5F700CF26C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE5BE1732AFFB5F700CF26C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE5BE1782AFFB5F800CF26C9 /* Doctor-AppointmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Doctor-AppointmentTests.xctest"; path = "/Users/ahmed-yamany/Desktop/Doctor-Appointment/build/Debug-iphoneos/Doctor-AppointmentTests.xctest"; sourceTree = "<absolute>"; };
-		EE5BE17C2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_AppointmentTests.swift; sourceTree = "<group>"; };
-		EE5BE1822AFFB5F800CF26C9 /* Doctor-AppointmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Doctor-AppointmentUITests.xctest"; path = "/Users/ahmed-yamany/Desktop/Doctor-Appointment/build/Debug-iphoneos/Doctor-AppointmentUITests.xctest"; sourceTree = "<absolute>"; };
-		EE5BE1862AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_AppointmentUITests.swift; sourceTree = "<group>"; };
-		EE5BE1882AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_AppointmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EE5BE1A22AFFBA2000CF26C9 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -115,6 +90,9 @@
 		EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EE5BE1B72AFFBAF700CF26C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE5BE1B92AFFBAF800CF26C9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE6206082B04BE8D00B74237 /* Doctor-Appointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Appointment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE62060C2B04D6FD00B74237 /* DateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
+		EE62060E2B04DB3800B74237 /* GenderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderTextField.swift; sourceTree = "<group>"; };
 		EE70AC652B02B208003B4DA3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EE70AC662B02B208003B4DA3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EE70AC672B02B208003B4DA3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -167,13 +145,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EE04B7842B03B26B00675E2E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE5BE15F2AFFB5F700CF26C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,20 +152,6 @@
 				EEC481D42AFFEECF00EC52DF /* Extensions in Frameworks */,
 				EEC481E32AFFFBF000EC52DF /* CompositionalLayoutableSection in Frameworks */,
 				EEC481D72AFFEEE000EC52DF /* MakeConstraints in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE5BE1752AFFB5F800CF26C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE5BE17F2AFFB5F800CF26C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +164,7 @@
 				EE5BE19B2AFFB9C900CF26C9 /* .swiftlint.yml */,
 				EE5BE19C2AFFB9C900CF26C9 /* swiftgen.yml */,
 				EE5BE1642AFFB5F700CF26C9 /* Doctor-Appointment */,
-				EE5BE17B2AFFB5F800CF26C9 /* Doctor-AppointmentTests */,
-				EE5BE1852AFFB5F800CF26C9 /* Doctor-AppointmentUITests */,
+				EE6206082B04BE8D00B74237 /* Doctor-Appointment.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,23 +180,6 @@
 				EE5BE1732AFFB5F700CF26C9 /* Info.plist */,
 			);
 			path = "Doctor-Appointment";
-			sourceTree = "<group>";
-		};
-		EE5BE17B2AFFB5F800CF26C9 /* Doctor-AppointmentTests */ = {
-			isa = PBXGroup;
-			children = (
-				EE5BE17C2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift */,
-			);
-			path = "Doctor-AppointmentTests";
-			sourceTree = "<group>";
-		};
-		EE5BE1852AFFB5F800CF26C9 /* Doctor-AppointmentUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EE5BE1862AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift */,
-				EE5BE1882AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift */,
-			);
-			path = "Doctor-AppointmentUITests";
 			sourceTree = "<group>";
 		};
 		EE5BE19F2AFFBA0100CF26C9 /* Utilities */ = {
@@ -329,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				EE812DF42B02CFBD007DB05F /* PrimaryTextField.swift */,
+				EE62060C2B04D6FD00B74237 /* DateTextField.swift */,
+				EE62060E2B04DB3800B74237 /* GenderTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -491,23 +432,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE04B7862B03B26B00675E2E /* DoctorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE04B7972B03B26B00675E2E /* Build configuration list for PBXNativeTarget "DoctorUITests" */;
-			buildPhases = (
-				EE04B7832B03B26B00675E2E /* Sources */,
-				EE04B7842B03B26B00675E2E /* Frameworks */,
-				EE04B7852B03B26B00675E2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DoctorUITests;
-			productName = DoctorUITests;
-			productReference = EE04B7872B03B26B00675E2E /* DoctorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		EE5BE1612AFFB5F700CF26C9 /* Doctor-Appointment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE5BE18C2AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-Appointment" */;
@@ -529,44 +453,8 @@
 				EEC481E22AFFFBF000EC52DF /* CompositionalLayoutableSection */,
 			);
 			productName = "Doctor-Appointment";
-			productReference = EE5BE1622AFFB5F700CF26C9 /* Doctor-Appointment.app */;
+			productReference = EE6206082B04BE8D00B74237 /* Doctor-Appointment.app */;
 			productType = "com.apple.product-type.application";
-		};
-		EE5BE1772AFFB5F800CF26C9 /* Doctor-AppointmentTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE5BE18F2AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-AppointmentTests" */;
-			buildPhases = (
-				EE5BE1742AFFB5F800CF26C9 /* Sources */,
-				EE5BE1752AFFB5F800CF26C9 /* Frameworks */,
-				EE5BE1762AFFB5F800CF26C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE5BE17A2AFFB5F800CF26C9 /* PBXTargetDependency */,
-			);
-			name = "Doctor-AppointmentTests";
-			productName = "Doctor-AppointmentTests";
-			productReference = EE5BE1782AFFB5F800CF26C9 /* Doctor-AppointmentTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EE5BE1812AFFB5F800CF26C9 /* Doctor-AppointmentUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE5BE1922AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-AppointmentUITests" */;
-			buildPhases = (
-				EE5BE17E2AFFB5F800CF26C9 /* Sources */,
-				EE5BE17F2AFFB5F800CF26C9 /* Frameworks */,
-				EE5BE1802AFFB5F800CF26C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EE5BE1842AFFB5F800CF26C9 /* PBXTargetDependency */,
-			);
-			name = "Doctor-AppointmentUITests";
-			productName = "Doctor-AppointmentUITests";
-			productReference = EE5BE1822AFFB5F800CF26C9 /* Doctor-AppointmentUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -578,20 +466,8 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					EE04B7862B03B26B00675E2E = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = EE04B7672B03B26900675E2E;
-					};
 					EE5BE1612AFFB5F700CF26C9 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					EE5BE1772AFFB5F800CF26C9 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = EE5BE1612AFFB5F700CF26C9;
-					};
-					EE5BE1812AFFB5F800CF26C9 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = EE5BE1612AFFB5F700CF26C9;
 					};
 				};
 			};
@@ -615,21 +491,11 @@
 			projectRoot = "";
 			targets = (
 				EE5BE1612AFFB5F700CF26C9 /* Doctor-Appointment */,
-				EE5BE1772AFFB5F800CF26C9 /* Doctor-AppointmentTests */,
-				EE5BE1812AFFB5F800CF26C9 /* Doctor-AppointmentUITests */,
-				EE04B7862B03B26B00675E2E /* DoctorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EE04B7852B03B26B00675E2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE5BE1602AFFB5F700CF26C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,20 +516,6 @@
 				EEFD048E2B013C6C00D303B7 /* VerifyCodeView.xib in Resources */,
 				EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */,
 				EEFD04972B013C9400D303B7 /* NewPasswordView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE5BE1762AFFB5F800CF26C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE5BE1802AFFB5F800CF26C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,13 +563,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EE04B7832B03B26B00675E2E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE5BE15E2AFFB5F700CF26C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,6 +586,7 @@
 				EEFD04962B013C9400D303B7 /* NewPasswordViewModel.swift in Sources */,
 				EEFD048D2B013C6C00D303B7 /* VerifyCodeViewModel.swift in Sources */,
 				EEC481CA2AFFEB9D00EC52DF /* H1Label.swift in Sources */,
+				EE62060D2B04D6FD00B74237 /* DateTextField.swift in Sources */,
 				EEC481D12AFFEE6B00EC52DF /* PrimaryButton.swift in Sources */,
 				EEC481CC2AFFEB9D00EC52DF /* MediumLabel.swift in Sources */,
 				EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */,
@@ -766,41 +612,12 @@
 				EEFD04842B013C4B00D303B7 /* FortgotPasswordViewModel.swift in Sources */,
 				EE893DE72B0294A800913047 /* CreateProfileViewModel.swift in Sources */,
 				EE344CCD2B003EDB007E45D3 /* SplashView.swift in Sources */,
+				EE62060F2B04DB3800B74237 /* GenderTextField.swift in Sources */,
 				EE70AC692B02B208003B4DA3 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE5BE1742AFFB5F800CF26C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE5BE17D2AFFB5F800CF26C9 /* Doctor_AppointmentTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE5BE17E2AFFB5F800CF26C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE5BE1872AFFB5F800CF26C9 /* Doctor_AppointmentUITests.swift in Sources */,
-				EE5BE1892AFFB5F800CF26C9 /* Doctor_AppointmentUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EE5BE17A2AFFB5F800CF26C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE5BE1612AFFB5F700CF26C9 /* Doctor-Appointment */;
-			targetProxy = EE5BE1792AFFB5F800CF26C9 /* PBXContainerItemProxy */;
-		};
-		EE5BE1842AFFB5F800CF26C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EE5BE1612AFFB5F700CF26C9 /* Doctor-Appointment */;
-			targetProxy = EE5BE1832AFFB5F800CF26C9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE5BE1702AFFB5F700CF26C9 /* LaunchScreen.storyboard */ = {
@@ -823,46 +640,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EE04B7932B03B26B00675E2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yamany.DoctorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Doctor;
-			};
-			name = Debug;
-		};
-		EE04B7942B03B26B00675E2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yamany.DoctorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Doctor;
-			};
-			name = Release;
-		};
 		EE5BE18A2AFFB5F800CF26C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -899,6 +676,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -963,6 +741,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -997,7 +776,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = HealthPal;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1027,7 +806,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = HealthPal;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1044,94 +823,9 @@
 			};
 			name = Release;
 		};
-		EE5BE1902AFFB5F800CF26C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.Doctor-AppointmentTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doctor-Appointment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Doctor-Appointment";
-			};
-			name = Debug;
-		};
-		EE5BE1912AFFB5F800CF26C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.Doctor-AppointmentTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doctor-Appointment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Doctor-Appointment";
-			};
-			name = Release;
-		};
-		EE5BE1932AFFB5F800CF26C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.Doctor-AppointmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Doctor-Appointment";
-			};
-			name = Debug;
-		};
-		EE5BE1942AFFB5F800CF26C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4U8DMJ33ZN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yamany.Doctor-AppointmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Doctor-Appointment";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE04B7972B03B26B00675E2E /* Build configuration list for PBXNativeTarget "DoctorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE04B7932B03B26B00675E2E /* Debug */,
-				EE04B7942B03B26B00675E2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EE5BE15D2AFFB5F700CF26C9 /* Build configuration list for PBXProject "Doctor-Appointment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1146,24 +840,6 @@
 			buildConfigurations = (
 				EE5BE18D2AFFB5F800CF26C9 /* Debug */,
 				EE5BE18E2AFFB5F800CF26C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE5BE18F2AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-AppointmentTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE5BE1902AFFB5F800CF26C9 /* Debug */,
-				EE5BE1912AFFB5F800CF26C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE5BE1922AFFB5F800CF26C9 /* Build configuration list for PBXNativeTarget "Doctor-AppointmentUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE5BE1932AFFB5F800CF26C9 /* Debug */,
-				EE5BE1942AFFB5F800CF26C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,10 +19,10 @@
                     <rect key="frame" x="0.0" y="59" width="378" height="535"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-Xw-ksB" userLabel="containerView">
-                            <rect key="frame" x="0.0" y="0.0" width="378" height="434.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="512.33333333333337"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="nLi-PY-VSn">
-                                    <rect key="frame" x="24" y="0.0" width="330" height="434.33333333333331"/>
+                                    <rect key="frame" x="24" y="0.0" width="330" height="512.33333333333337"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNQ-hm-gBA" customClass="ImagePicker" customModule="Extensions">
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="160"/>
@@ -35,10 +35,10 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="M7k-D4-Ul7" userLabel="input form">
-                                            <rect key="frame" x="0.0" y="192" width="330" height="172"/>
+                                            <rect key="frame" x="0.0" y="192" width="330" height="250"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADX-4r-Qns" userLabel="name TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="namePhonePad" textContentType="name"/>
                                                     <userDefinedRuntimeAttributes>
@@ -46,7 +46,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2NI-xz-zVq" userLabel="nickname TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="64" width="330" height="44"/>
+                                                    <rect key="frame" x="0.0" y="54" width="330" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="nickname"/>
                                                     <userDefinedRuntimeAttributes>
@@ -54,22 +54,35 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-D0-gB3" userLabel="email TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="128" width="330" height="44"/>
+                                                    <rect key="frame" x="0.0" y="108" width="330" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="localize" value="profile.textfield.email"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRR-N0-0wX" userLabel="date TF" customClass="DateTextField" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="162" width="330" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-7X-Rbh" userLabel="Gender TF" customClass="GenderTextField" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="216" width="330" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rM2-rS-eGt" userLabel="Save" customClass="PrimaryButton" customModule="Doctor_Appointment" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="396" width="330" height="38.333333333333314"/>
+                                            <rect key="frame" x="0.0" y="474" width="330" height="38.333333333333371"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="localize" value="signup.button"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localize" value="profile.button"/>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="Q8e-eJ-M8s"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -107,13 +120,19 @@
     </objects>
     <designables>
         <designable name="2NI-xz-zVq">
-            <size key="intrinsicContentSize" width="191.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="9dK-D0-gB3">
-            <size key="intrinsicContentSize" width="163.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="ADX-4r-Qns">
-            <size key="intrinsicContentSize" width="164.66666666666666" height="34"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="kfI-7X-Rbh">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="xRR-N0-0wX">
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
     </designables>
     <resources>

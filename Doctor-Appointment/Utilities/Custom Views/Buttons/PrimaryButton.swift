@@ -9,12 +9,12 @@ import UIKit
 import MakeConstraints
 import Extensions
 
-class PrimaryButton: UIButton {
-    override init(frame: CGRect) {
+open class PrimaryButton: UIButton {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
