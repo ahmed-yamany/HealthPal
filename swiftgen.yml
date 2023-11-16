@@ -1,5 +1,5 @@
-input_dir: Doctor-Appointment/Resources/
-output_dir: Doctor-Appointment/Resources/Generated/
+input_dir: Resources/
+output_dir: Resources/Generated/
 
 strings:
    inputs:
