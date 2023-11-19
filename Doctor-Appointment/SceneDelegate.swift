@@ -18,6 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
         self.window = window
         //
-        AppCoordinator.shared.checkLogin()
+        AppCoordinator.shared.start()
     }
 }

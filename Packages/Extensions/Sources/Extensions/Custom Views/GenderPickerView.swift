@@ -7,7 +7,6 @@
 import UIKit
 
 public struct Gender: RawRepresentable, Equatable, Hashable {
-    /// `CONNECT` method.
     public static let male = Gender(rawValue: NSLocalizedString("male", bundle: .module, comment: ""))
     public static let female = Gender(rawValue: NSLocalizedString("female", bundle: .module, comment: ""))
 

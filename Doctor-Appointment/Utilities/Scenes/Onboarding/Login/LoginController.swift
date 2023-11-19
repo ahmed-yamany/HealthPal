@@ -14,7 +14,7 @@ protocol LoginViewDelegate {
     func signupButtonTapped()
 }
 //
-class LoginController: CoordinatorViewController {
+class LoginController: CoordinatorViewController<LoginViewModel> {
     // MARK: - View
     lazy var loginView = LoginView(viewModel: viewModel, delegate: self)
     //

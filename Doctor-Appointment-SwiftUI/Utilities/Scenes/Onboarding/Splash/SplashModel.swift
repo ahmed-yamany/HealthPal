@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct SplashModel: Codable, Identifiable {
+struct SplashModel: Codable, Identifiable, Hashable {
     var id = UUID()
     let image: String
     let title: String

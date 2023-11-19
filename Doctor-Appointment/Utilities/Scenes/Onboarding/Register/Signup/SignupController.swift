@@ -13,7 +13,7 @@ protocol SignupViewDelegate {
     func signinButtonTapped()
 }
 //
-class SignupController: CoordinatorViewController {
+class SignupController: CoordinatorViewController<SignupViewModel> {
     // MARK: - View
     lazy var signupView = SignupView(viewModel: viewModel, delegate: self)
     //

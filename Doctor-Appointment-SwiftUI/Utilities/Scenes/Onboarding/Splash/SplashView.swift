@@ -18,9 +18,7 @@ struct SplashView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.doapMainBackground)
         .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: viewModel.selectedPage)
-        .fullScreenCover(isPresented: $viewModel.skip, content: {
-            Text("Hello")
-        })
+        .fullScreenCover(isPresented: $viewModel.skip, content: { LoginView() })
         .task {
             do {
                 let splashes = try await viewModel.getSplashes()
@@ -49,7 +47,8 @@ private struct PagesView: View {
     var body: some View {
         TabView(selection: $viewModel.selectedPage) {
             ForEach(viewModel.splashes.indices, id: \.self) { index in
-                PageView(splash: viewModel.splashes[index])
+                let splash = viewModel.splashes[index]
+                PageView(splash: splash)
                     .tag(index)
             }
         }
@@ -86,7 +85,7 @@ private struct PageView: View {
                 .foregroundStyle(.doap500)
                 .multilineTextAlignment(.center)
         }
-        .frame(maxHeight: UIScreen.main.bounds.height * 0.1)
+        .frame(minHeight: UIScreen.main.bounds.height * 0.1)
         .padding(.horizontal, 32)
     }
 }

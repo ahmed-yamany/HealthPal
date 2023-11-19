@@ -1,23 +1,25 @@
 import UIKit
 
-public protocol CoordinatorDelegate: AnyObject {
+public protocol CoordinatorDelegate: NSObjectProtocol {
     func coordinatorDidReachFirstViewController()
     func coordinatorDidReachLastViewController()
 }
 
-open class Coordinator: NSObject {
+open class Coordinator<SharedObjectType>: NSObject {
     public private(set) var navigationController: UINavigationController
+    public private(set) var sharedObject: SharedObjectType
     public private(set) var currentIndex: Int = -1
-    public private(set) var coordinatorTypes: [CoordinatorViewController.Type] = []
+    public private(set) var coordinatorTypes: [CoordinatorViewController<SharedObjectType>.Type] = []
     //
     open weak var delegate: CoordinatorDelegate?
     //
-    public init(navigationControllerType: UINavigationController.Type) {
+    public init(navigationControllerType: UINavigationController.Type, sharedObject: SharedObjectType) {
         self.navigationController = navigationControllerType.init(nibName: nil, bundle: nil)
+        self.sharedObject = sharedObject
         super.init()
     }
     //
-    open func push(userInfo: [String: Any]? = nil ) {
+    open func push() {
         guard currentIndex <= coordinatorTypes.count - 2 else {
             debugPrint("you have reached the last viewController")
             delegate?.coordinatorDidReachLastViewController()
@@ -28,11 +30,12 @@ open class Coordinator: NSObject {
         //
         let currentCoordinatorType = self.coordinatorTypes[currentIndex]
         let currentCoordinator = currentCoordinatorType.init()
-        self.push(to: currentCoordinator, userInfo: userInfo)
+        self.push(to: currentCoordinator)
     }
     //
-    open func push(to viewController: CoordinatorViewController, userInfo: [String: Any]? = nil ) {
+    open func push(to viewController: CoordinatorViewController<SharedObjectType>) {
         viewController.coordinator = self
+        viewController.sharedObject = self.sharedObject
         navigationController.pushViewController(viewController, animated: true)
     }
     //
@@ -44,7 +47,7 @@ open class Coordinator: NSObject {
         }
         decreaseCurrentIndex()
     }
-    public func setCoordinatorTypes(_ coordinatorTypes: [CoordinatorViewController.Type]) {
+    public func setCoordinatorTypes(_ coordinatorTypes: [CoordinatorViewController<SharedObjectType>.Type]) {
         self.coordinatorTypes = coordinatorTypes
         push()
     }

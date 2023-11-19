@@ -12,7 +12,7 @@ protocol CreateProfileViewDelegate {
     func saveButtonTapped()
 }
 //
-class CreateProfileController: CoordinatorViewController {
+class CreateProfileController: CoordinatorViewController<SignupViewModel> {
     // MARK: - View
     lazy var createProfileView = CreateProfileView(viewModel: viewModel, delegate: self)
     //

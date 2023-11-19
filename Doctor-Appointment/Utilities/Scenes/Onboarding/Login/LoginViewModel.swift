@@ -11,4 +11,5 @@ import Combine
 // MARK: LoginViewModel
 //
 class LoginViewModel {
+    var isEnable = false
 }

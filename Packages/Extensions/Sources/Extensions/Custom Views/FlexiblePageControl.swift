@@ -8,7 +8,7 @@
 import UIKit
 
 @IBDesignable
-open class FlexiblePageControl: UIControl {
+open class FlexiblePageControl: UIView {
     // MARK: - Properties
     @IBInspectable open var numberOfPages: Int = 1 {
         didSet {

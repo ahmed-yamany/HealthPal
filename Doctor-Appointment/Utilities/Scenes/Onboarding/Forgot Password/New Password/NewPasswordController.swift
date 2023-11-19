@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Extensions
 
-class NewPasswordController: UIViewController {
+class NewPasswordController: CoordinatorViewController<FortgotPasswordViewModel> {
     // MARK: - View
     lazy var newPasswordView = NewPasswordView(viewModel: viewModel)
     //

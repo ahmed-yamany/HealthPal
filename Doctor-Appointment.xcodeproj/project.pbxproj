@@ -48,6 +48,12 @@
 		EE893DE72B0294A800913047 /* CreateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE32B0294A800913047 /* CreateProfileViewModel.swift */; };
 		EE893DE82B0294A800913047 /* CreateProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE893DE42B0294A800913047 /* CreateProfileView.xib */; };
 		EE893DEA2B029F0C00913047 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE92B029F0C00913047 /* AppCoordinator.swift */; };
+		EEBE7D052B07C5E4005F324C /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D042B07C5E4005F324C /* LogoView.swift */; };
+		EEBE7D092B07C6D6005F324C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D072B07C6D6005F324C /* LoginView.swift */; };
+		EEBE7D0A2B07C6D6005F324C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D082B07C6D6005F324C /* LoginViewModel.swift */; };
+		EEBE7D0C2B07C7D8005F324C /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D0B2B07C7D8005F324C /* PrimaryTextField.swift */; };
+		EEBE7D0F2B08BAEA005F324C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D0E2B08BAEA005F324C /* SocialMediaButton.swift */; };
+		EEBE7D112B08BE13005F324C /* MediumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE7D102B08BE13005F324C /* MediumButton.swift */; };
 		EEC481BC2AFFEAA600EC52DF /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481B82AFFEAA600EC52DF /* SplashController.swift */; };
 		EEC481BD2AFFEAA600EC52DF /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481B92AFFEAA600EC52DF /* SplashViewModel.swift */; };
 		EEC481C92AFFEB9D00EC52DF /* SmallLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC481C32AFFEB9D00EC52DF /* SmallLabel.swift */; };
@@ -132,6 +138,13 @@
 		EE893DE32B0294A800913047 /* CreateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewModel.swift; sourceTree = "<group>"; };
 		EE893DE42B0294A800913047 /* CreateProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileView.xib; sourceTree = "<group>"; };
 		EE893DE92B029F0C00913047 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EEBE7D032B07C21D005F324C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EEBE7D042B07C5E4005F324C /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		EEBE7D072B07C6D6005F324C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EEBE7D082B07C6D6005F324C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EEBE7D0B2B07C7D8005F324C /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		EEBE7D0E2B08BAEA005F324C /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		EEBE7D102B08BE13005F324C /* MediumButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumButton.swift; sourceTree = "<group>"; };
 		EEC481B82AFFEAA600EC52DF /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		EEC481B92AFFEAA600EC52DF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		EEC481C32AFFEB9D00EC52DF /* SmallLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallLabel.swift; sourceTree = "<group>"; };
@@ -278,6 +291,7 @@
 				EE693C4E2B064BCF00CBBC28 /* Doctor_Appointment_SwiftUIApp.swift */,
 				EED16EA42B064E430058B98C /* Utilities */,
 				EED16E9A2B064DA30058B98C /* Resources */,
+				EEBE7D032B07C21D005F324C /* Info.plist */,
 			);
 			path = "Doctor-Appointment-SwiftUI";
 			sourceTree = "<group>";
@@ -328,6 +342,15 @@
 				EE62060E2B04DB3800B74237 /* GenderTextField.swift */,
 			);
 			path = TextFields;
+			sourceTree = "<group>";
+		};
+		EEBE7D062B07C6B7005F324C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE7D072B07C6D6005F324C /* LoginView.swift */,
+				EEBE7D082B07C6D6005F324C /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		EEC481B52AFFE9CB00EC52DF /* Onboarding */ = {
@@ -432,6 +455,8 @@
 			children = (
 				EED16EA62B064E5C0058B98C /* Buttons */,
 				EED16EAB2B064E6C0058B98C /* PageControl.swift */,
+				EEBE7D042B07C5E4005F324C /* LogoView.swift */,
+				EEBE7D0B2B07C7D8005F324C /* PrimaryTextField.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -439,8 +464,10 @@
 		EED16EA62B064E5C0058B98C /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				EED16EA72B064E660058B98C /* NormalButton.swift */,
 				EED16EA82B064E660058B98C /* PrimaryButton.swift */,
+				EED16EA72B064E660058B98C /* NormalButton.swift */,
+				EEBE7D102B08BE13005F324C /* MediumButton.swift */,
+				EEBE7D0E2B08BAEA005F324C /* SocialMediaButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -457,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				EED16EAF2B064E940058B98C /* Splash */,
+				EEBE7D062B07C6B7005F324C /* Login */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -788,8 +816,14 @@
 				EE693C4F2B064BCF00CBBC28 /* Doctor_Appointment_SwiftUIApp.swift in Sources */,
 				EED16E9E2B064DBC0058B98C /* UIFont+Style.swift in Sources */,
 				EE693C5E2B064C9E00CBBC28 /* Strings+Generated.swift in Sources */,
+				EEBE7D0F2B08BAEA005F324C /* SocialMediaButton.swift in Sources */,
+				EEBE7D052B07C5E4005F324C /* LogoView.swift in Sources */,
+				EEBE7D0C2B07C7D8005F324C /* PrimaryTextField.swift in Sources */,
 				EED16EB42B064E9B0058B98C /* SplashModel.swift in Sources */,
+				EEBE7D112B08BE13005F324C /* MediumButton.swift in Sources */,
 				EED16EB52B064E9B0058B98C /* SplashView.swift in Sources */,
+				EEBE7D0A2B07C6D6005F324C /* LoginViewModel.swift in Sources */,
+				EEBE7D092B07C6D6005F324C /* LoginView.swift in Sources */,
 				EED16EA92B064E660058B98C /* NormalButton.swift in Sources */,
 				EED16EB32B064E9B0058B98C /* SplashViewModel.swift in Sources */,
 			);
@@ -1012,6 +1046,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Doctor-Appointment-SwiftUI/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1043,6 +1078,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Doctor-Appointment-SwiftUI/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

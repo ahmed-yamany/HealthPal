@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Extensions
 
-class VerifyCodeController: UIViewController {
+class VerifyCodeController: CoordinatorViewController<FortgotPasswordViewModel> {
     // MARK: - View
     lazy var verifyCodeView = VerifyCodeView(viewModel: viewModel)
     //
