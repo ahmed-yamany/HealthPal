@@ -10,7 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewView" customModule="Doctor_Appointment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewView" customModule="Doctor_Appointment" customModuleProvider="target">
+            <connections>
+                <outlet property="signupButton" destination="oli-65-Loq" id="hlP-Cd-jmf"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="378" height="786"/>
@@ -20,10 +24,10 @@
                     <rect key="frame" x="0.0" y="59" width="378" height="693"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-Xw-ksB" userLabel="containerView">
-                            <rect key="frame" x="0.0" y="0.0" width="378" height="598.33333333333337"/>
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="568.33333333333337"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="nLi-PY-VSn">
-                                    <rect key="frame" x="24" y="0.0" width="330" height="598.33333333333337"/>
+                                    <rect key="frame" x="24" y="0.0" width="330" height="568.33333333333337"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-pd-TTr" customClass="LogoView" customModule="Doctor_Appointment" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="330" height="128"/>
@@ -34,42 +38,51 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="zkV-gD-GQO">
-                                            <rect key="frame" x="0.0" y="159.99999999999997" width="330" height="438.33333333333326"/>
+                                            <rect key="frame" x="0.0" y="159.99999999999997" width="330" height="408.33333333333326"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oci-IW-MRi" userLabel="input form">
-                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="172"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="142"/>
                                                     <subviews>
                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3bs-RU-rdb" userLabel="name TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="330" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="namePhonePad" textContentType="name"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="string" keyPath="localize" value="signup.textField.name"/>
                                                                 <userDefinedRuntimeAttribute type="image" keyPath="icon" value="icon-user"/>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="nameTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="3uw-VL-o2n"/>
+                                                            </connections>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-xs-Tj7" userLabel="email TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="64" width="330" height="44"/>
+                                                            <rect key="frame" x="0.0" y="54" width="330" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="string" keyPath="localize" value="signup.textField.email"/>
                                                                 <userDefinedRuntimeAttribute type="image" keyPath="icon" value="icon-email"/>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="emailTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="UPZ-oi-B69"/>
+                                                            </connections>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrs-wQ-NZX" userLabel="password TF" customClass="PrimaryTextField" customModule="Doctor_Appointment" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="128" width="330" height="44"/>
+                                                            <rect key="frame" x="0.0" y="108" width="330" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="string" keyPath="localize" value="signup.textField.password"/>
                                                                 <userDefinedRuntimeAttribute type="image" keyPath="icon" value="icon-password"/>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="passwordTextFieldEditingChanged:" destination="-1" eventType="editingChanged" id="3dT-OE-IXu"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GKr-3g-eaU">
-                                                    <rect key="frame" x="0.0" y="196" width="330" height="242.33333333333337"/>
+                                                    <rect key="frame" x="0.0" y="166" width="330" height="242.33333333333337"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oli-65-Loq" userLabel="signup" customClass="PrimaryButton" customModule="Doctor_Appointment" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="330" height="38.333333333333336"/>
@@ -188,13 +201,13 @@
     </objects>
     <designables>
         <designable name="3bs-RU-rdb">
-            <size key="intrinsicContentSize" width="208" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="34"/>
         </designable>
         <designable name="UHP-xs-Tj7">
-            <size key="intrinsicContentSize" width="206.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="34"/>
         </designable>
         <designable name="lrs-wQ-NZX">
-            <size key="intrinsicContentSize" width="234.33333333333334" height="34"/>
+            <size key="intrinsicContentSize" width="50" height="34"/>
         </designable>
     </designables>
     <resources>

@@ -10,6 +10,17 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum Alert {
+    /// Error
+    internal static let error = L10n.tr("Localizable", "alert.error", fallback: "Error")
+    /// Localizable.strings
+    ///   Doctor-Appointment
+    /// 
+    ///   Created by Ahmed Yamany on 11/11/2023.
+    internal static let success = L10n.tr("Localizable", "alert.success", fallback: "Congratulations!")
+    /// Warrning
+    internal static let warrning = L10n.tr("Localizable", "alert.warrning", fallback: "Warrning")
+  }
   internal enum ForgotPassword {
     /// Send Code
     internal static let button = L10n.tr("Localizable", "forgotPassword.button", fallback: "Send Code")
@@ -81,6 +92,12 @@ internal enum L10n {
   internal enum Signup {
     /// Create Account
     internal static let button = L10n.tr("Localizable", "signup.button", fallback: "Create Account")
+    internal enum Alert {
+      /// Your account is ready to use. You will be redirected to the Home Page in a few seconds...
+      internal static let success = L10n.tr("Localizable", "signup.alert.success", fallback: "Your account is ready to use. You will be redirected to the Home Page in a few seconds...")
+      /// Sign up Form is not Valid
+      internal static let warrning = L10n.tr("Localizable", "signup.alert.warrning", fallback: "Sign up Form is not Valid")
+    }
     internal enum Login {
       /// Sign in
       internal static let button = L10n.tr("Localizable", "signup.login.button", fallback: "Sign in")
@@ -105,10 +122,7 @@ internal enum L10n {
   internal enum SocialMedia {
     /// Sign In with Facebook
     internal static let facebook = L10n.tr("Localizable", "socialMedia.facebook", fallback: "Sign In with Facebook")
-    /// Localizable.strings
-    ///   Doctor-Appointment
-    /// 
-    ///   Created by Ahmed Yamany on 11/11/2023.
+    /// Sign In with Google
     internal static let google = L10n.tr("Localizable", "socialMedia.google", fallback: "Sign In with Google")
   }
   internal enum Splash {

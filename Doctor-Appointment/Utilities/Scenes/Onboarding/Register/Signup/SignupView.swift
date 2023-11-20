@@ -11,6 +11,8 @@ import CompositionalLayoutableSection
 
 class SignupView: UIView {
     // MARK: IBOutlet
+    @IBOutlet weak var signupButton: PrimaryButton!
+    let activityIndicator = UIActivityIndicatorView()
     //
     // MARK: - Properties
     let viewModel: SignupViewModel
@@ -21,7 +23,6 @@ class SignupView: UIView {
         self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
-        configureUI()
     }
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
@@ -29,16 +30,34 @@ class SignupView: UIView {
 }
 //
 // MARK: - Configurations
-private extension SignupView {
-    func configureUI() {
+extension SignupView {
+    func startLoading() {
+        activityIndicator.color = .doapMainBackground
+        signupButton.show(activityIndicator)
+    }
+    func stopLoading() {
+        activityIndicator.hide()
     }
 }
 //
 // MARK: - Actions
 private extension SignupView {
+    @IBAction func nameTextFieldEditingChanged(_ sender: PrimaryTextField) {
+        viewModel.name = sender.text ?? ""
+    }
+    ///
+    @IBAction func emailTextFieldEditingChanged(_ sender: PrimaryTextField) {
+        viewModel.email = sender.text ?? ""
+    }
+    ///
+    @IBAction func passwordTextFieldEditingChanged(_ sender: PrimaryTextField) {
+        viewModel.password = sender.text ?? ""
+    }
+    ///
     @IBAction func signupButtonTapped(_ sender: UIButton) {
         delegate.signupButtonTapped()
     }
+    ///
     @IBAction func signinButtonTapped(_ sender: UIButton) {
         delegate.signinButtonTapped()
     }

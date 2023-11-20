@@ -6,6 +6,10 @@
   
 */
 
+"alert.success" = "Congratulations!";
+"alert.warrning" = "Warrning";
+"alert.error" = "Error";
+//
 "socialMedia.google" = "Sign In with Google";
 "socialMedia.facebook" = "Sign In with Facebook";
 //
@@ -29,6 +33,8 @@
 "signup.textField.password" = "Password";
 "signup.login.label" = "Do have an account?";
 "signup.login.button" = "Sign in";
+"signup.alert.success" = "Your account is ready to use. You will be redirected to the Home Page in a few seconds...";
+"signup.alert.warrning" = "Sign up Form is not Valid";
 //
 "profile.title" = "Fill Your Profile";
 "profile.button" = "Save";

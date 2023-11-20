@@ -7,6 +7,7 @@
 
 import UIKit
 import Extensions
+import FirebaseAuth
 
 final class AppCoordinator {
     public static let shared = AppCoordinator()
@@ -14,14 +15,14 @@ final class AppCoordinator {
     ///
     private init() {}
     ///
-    public func start() {
+    public func checkLogin() {
         guard let window else {
             Logger.log("Failed to wrap main window", category: \.default, level: .fault)
             return
         }
         //
-        let login = 5 < 3
-        if login {
+        if Auth.auth().currentUser != nil {
+            window.rootViewController = TabarController()
         } else {
             window.rootViewController = SplashController()
         }

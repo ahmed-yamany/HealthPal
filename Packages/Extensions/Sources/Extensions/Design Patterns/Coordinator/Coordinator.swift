@@ -47,6 +47,12 @@ open class Coordinator<SharedObjectType>: NSObject {
         }
         decreaseCurrentIndex()
     }
+    //
+    open func popToRoot() {
+        currentIndex = 0
+        navigationController.popToRootViewController(animated: true)
+    }
+    //
     public func setCoordinatorTypes(_ coordinatorTypes: [CoordinatorViewController<SharedObjectType>.Type]) {
         self.coordinatorTypes = coordinatorTypes
         push()

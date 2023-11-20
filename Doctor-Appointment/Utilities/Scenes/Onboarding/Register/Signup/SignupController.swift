@@ -7,6 +7,7 @@
 
 import UIKit
 import Extensions
+import FirebaseAuth
 
 protocol SignupViewDelegate {
     func signupButtonTapped()
@@ -24,15 +25,19 @@ class SignupController: CoordinatorViewController<SignupViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = signupView
-        handlerPrivates()
     }
 }
 //
 // MARK: - SignupViewDelegate
 extension SignupController: SignupViewDelegate {
     func signupButtonTapped() {
-        coordinator.push()
+        if viewModel.isValidForm() {
+            performSignup()
+        } else {
+            AlertController.shared.preset(type: .warrning, with: L10n.Signup.Alert.warrning, dismissAfter: 2)
+        }
     }
+    //
     func signinButtonTapped() {
         AppCoordinator.shared.login()
     }
@@ -40,6 +45,27 @@ extension SignupController: SignupViewDelegate {
 //
 // MARK: - Private Handlers
 private extension SignupController {
-    func handlerPrivates() {
+    func performSignup() {
+        signupView.startLoading()
+        Task {
+            do {
+                try await viewModel.performSignup()
+                onSuccessSignup()
+            } catch {
+                showSignupError(error)
+            }
+            signupView.stopLoading()
+        }
+    }
+    ///
+    func onSuccessSignup() {
+        AlertController.shared.preset(type: .success, with: L10n.Signup.Alert.success, dismissAfter: 3.0) {
+            AppCoordinator.shared.checkLogin()
+        }
+        Logger.log("Signup done", category: \.default, level: .info)
+    }
+    ///
+    func showSignupError(_ error: Error) {
+        AlertController.shared.preset(type: .error, with: error.localizedDescription, dismissAfter: 3.0)
     }
 }

@@ -11,6 +11,8 @@ import CompositionalLayoutableSection
 
 class LoginView: UIView {
     // MARK: IBOutlet
+    @IBOutlet weak var signinButton: PrimaryButton!
+    let activityIndicator = UIActivityIndicatorView()
     //
     // MARK: - Properties
     let viewModel: LoginViewModel
@@ -21,7 +23,6 @@ class LoginView: UIView {
         self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
-        configureUI()
     }
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
@@ -29,21 +30,34 @@ class LoginView: UIView {
 }
 //
 // MARK: - Configurations
-private extension LoginView {
-    func configureUI() {
+extension LoginView {
+    func startLoading() {
+        signinButton.show(activityIndicator)
+        activityIndicator.color = .doapMainBackground
+    }
+    func stopLoading() {
+        activityIndicator.hide()
     }
 }
 //
 // MARK: - Actions
 private extension LoginView {
+    @IBAction func emailEditingChanged(_ sender: PrimaryTextField) {
+        viewModel.email = sender.text ?? ""
+    }
+    ///
+    @IBAction func passwordEditingChanged(_ sender: PrimaryTextField) {
+        viewModel.password = sender.text ?? ""
+    }
+    ///
     @IBAction func signinButtonTapped(_ sender: PrimaryButton) {
         delegate.signinButtonTapped()
     }
-    //
+    ///
     @IBAction func forgotPasswordTapped(_ sender: MediumButton) {
         delegate.forgotPasswordTapped()
     }
-    //
+    ///
     @IBAction func signupButtonTapped(_ sender: MediumButton) {
         delegate.signupButtonTapped()
     }

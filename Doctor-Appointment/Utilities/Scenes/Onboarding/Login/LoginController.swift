@@ -32,6 +32,16 @@ class LoginController: CoordinatorViewController<LoginViewModel> {
 // MARK: - SignupViewDelegate
 extension LoginController: LoginViewDelegate {
     func signinButtonTapped() {
+        loginView.startLoading()
+        Task {
+            do {
+                try await viewModel.performLogin()
+                AppCoordinator.shared.checkLogin()
+            } catch {
+                AlertController.shared.preset(type: .error, with: error.localizedDescription, dismissAfter: 3.0)
+            }
+            loginView.stopLoading()
+        }
     }
     //
     func forgotPasswordTapped() {

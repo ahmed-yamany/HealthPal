@@ -7,6 +7,7 @@
 
 import UIKit
 import Extensions
+import FirebaseAuth
 
 protocol ForgotPasswordViewDelegate {
     func sendCodeButtonTapped()
