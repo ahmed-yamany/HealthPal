@@ -9,14 +9,16 @@ import UIKit
 import Extensions
 import CompositionalLayoutableSection
 
-class FortgotPasswordView: UIView {
+class ForgotPasswordView: UIView {
     // MARK: IBOutlet
     //
     // MARK: - Properties
-    let viewModel: FortgotPasswordViewModel
+    let viewModel: ForgotPasswordViewModel
+    let delegate: ForgotPasswordViewDelegate
     // MARK: Init
-    init(viewModel: FortgotPasswordViewModel) {
+    init(viewModel: ForgotPasswordViewModel, delegate: ForgotPasswordViewDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
         configureUI()
@@ -24,19 +26,22 @@ class FortgotPasswordView: UIView {
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
     }
+    @IBAction func sendCodeButtonTapped(_ sender: PrimaryButton) {
+        delegate.sendCodeButtonTapped()
+    }
 }
 //
 // MARK: - Configurations
-private extension FortgotPasswordView {
+private extension ForgotPasswordView {
     func configureUI() {
     }
 }
 //
 // MARK: - Actions
-private extension FortgotPasswordView {
+private extension ForgotPasswordView {
 }
 //
-private extension FortgotPasswordView {
+private extension ForgotPasswordView {
     /// Loads the view from a nib file and adds it as a subview to the SplashView view.
     func loadNib() {
         // Please do not update this code, as it's used to load the view from a nib.

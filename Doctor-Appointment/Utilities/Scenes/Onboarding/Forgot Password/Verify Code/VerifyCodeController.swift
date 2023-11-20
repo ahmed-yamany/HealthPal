@@ -8,9 +8,13 @@
 import UIKit
 import Extensions
 
-class VerifyCodeController: CoordinatorViewController<FortgotPasswordViewModel> {
+protocol VerifyCodeViewDelegate {
+    func verifyButtonTapped()
+}
+//
+class VerifyCodeController: CoordinatorViewController<LoginViewModel> {
     // MARK: - View
-    lazy var verifyCodeView = VerifyCodeView(viewModel: viewModel)
+    lazy var verifyCodeView = VerifyCodeView(viewModel: viewModel, delegate: self)
     //
     // MARK: - Properties
     let viewModel = VerifyCodeViewModel()
@@ -20,6 +24,13 @@ class VerifyCodeController: CoordinatorViewController<FortgotPasswordViewModel> 
         super.viewDidLoad()
         self.view = verifyCodeView
         handlerPrivates()
+    }
+}
+//
+// MARK: - SignupViewDelegate
+extension VerifyCodeController: VerifyCodeViewDelegate {
+    func verifyButtonTapped() {
+        coordinator.push()
     }
 }
 //

@@ -8,7 +8,7 @@
 import UIKit
 
 open class CoordinatorViewController<SharedObjectType>: UIViewController {
-    public unowned var coordinator: Coordinator<SharedObjectType>!
+    public var coordinator: Coordinator<SharedObjectType>!
     public var sharedObject: SharedObjectType!
     //
     /// used to notify the coordinator when the view controller is popped from the navigation stack.

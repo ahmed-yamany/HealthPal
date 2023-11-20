@@ -35,6 +35,7 @@ extension LoginController: LoginViewDelegate {
     }
     //
     func forgotPasswordTapped() {
+        coordinator.push()
     }
     //
     func signupButtonTapped() {

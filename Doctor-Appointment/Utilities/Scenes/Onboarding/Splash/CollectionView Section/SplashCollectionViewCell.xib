@@ -47,6 +47,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="doap-mainBackground"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="EUm-4n-5BC" secondAttribute="trailing" id="BoD-D8-LZG"/>
                 <constraint firstItem="mv7-LK-UNq" firstAttribute="height" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.15" id="Hod-KY-Zmr"/>
@@ -70,6 +71,9 @@
         </namedColor>
         <namedColor name="doap-700">
             <color red="0.21568627450980393" green="0.25490196078431371" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-mainBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

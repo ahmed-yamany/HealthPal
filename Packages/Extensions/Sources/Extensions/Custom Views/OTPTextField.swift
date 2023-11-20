@@ -8,23 +8,6 @@
 import UIKit
 import Combine
 
-// MARK: - ViewModel
-//
-@available(iOS 14.0, *)
-public extension OTPTextField {
-    class ViewModel {
-        public var slotCount: Int
-        public var defaultCharacter: String
-        ///
-        @Published public var code: String = ""
-        @Published public var isCodeValid: Bool = false
-        ///
-        public init(slotCount: Int = 4, defaultCharacter: String = "_") {
-            self.slotCount = slotCount
-            self.defaultCharacter = defaultCharacter
-        }
-    }
-}
 /// A protocol that provides methods for creating digit labels for OTPTextField.
 public protocol OTPTextFieldDataSource: NSObjectProtocol {
     /// Create a digit label for OTPTextField.
@@ -36,29 +19,36 @@ public protocol OTPTextFieldDataSource: NSObjectProtocol {
 open class OTPTextField: UITextField {
     // MARK: - Views
     //
-    private var digitsLabels: [UILabel] = []
-    private lazy var tapRecognizer: UITapGestureRecognizer = {
+    let labelsStackView = UIStackView()
+    private(set) var digitsLabels: [UILabel] = []
+    private(set) lazy var tapRecognizer: UITapGestureRecognizer = {
         let recognizer = UITapGestureRecognizer()
         recognizer.addTarget(self, action: #selector(becomeFirstResponder))
         return recognizer
     }()
     //
     // MARK: - Properties
-    open var viewModel: ViewModel!
+    @Published open var code: String = ""
+    @Published open var isCodeValid: Bool = false
+    //
     open weak var dataSource: OTPTextFieldDataSource?
-    // MARK: - Configurations
-    private var isConfigured = false
-    ///
-    /// Configures the OTPTextField with the specified number of slots.
-    ///
-    /// - Parameter slotCount: The number of slots for entering OTP digits.
-    public func configure(with viewModel: ViewModel) {
-        guard !isConfigured else { return }
-        self.viewModel = viewModel
-        isConfigured.toggle()
+    //
+    open var slotCount: Int {
+        didSet {
+            createDigitLabels(slotCount)
+        }
+    }
+    open var defaultCharacter: String = " "
+    //
+    public override init(frame: CGRect) {
+        slotCount = 4
+        super.init(frame: frame)
         configureUI()
-        createDigitLabels(viewModel.slotCount)
-        addGestureRecognizer(tapRecognizer)
+    }
+    public required init?(coder: NSCoder) {
+        slotCount = 4
+        super.init(coder: coder)
+        configureUI()
     }
     // MARK: - Private Handlers
     // Configuration code for text field appearance and behavior.
@@ -67,14 +57,30 @@ open class OTPTextField: UITextField {
         textColor = .clear
         keyboardType = .numberPad
         textContentType = .oneTimeCode
+        borderStyle = .none
         addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         delegate = self
+        addGestureRecognizer(tapRecognizer)
+        self.updateLabelsStackView()
+    }
+    //
+    private func updateLabelsStackView() {
+        labelsStackView.translatesAutoresizingMaskIntoConstraints = false
+        labelsStackView.axis = .horizontal
+        labelsStackView.alignment = .fill
+        labelsStackView.distribution = .fillEqually
+        labelsStackView.spacing = 8
+    }
+    //
+    private func clearLabelsStackView() {
+        labelsStackView.arrangedSubviews.forEach { view in
+            self.labelsStackView.removeArrangedSubview(view)
+        }
     }
     //
     private func createDigitLabels(_ count: Int) {
-        // Create a horizontal stack view for digit labels
-        let labelsStackView = createHorizontalStackView()
         //
+        clearLabelsStackView()
         // Create and add digit labels to the stack view
         for _ in 1 ... count {
             let label = createDigitLabel()
@@ -86,16 +92,6 @@ open class OTPTextField: UITextField {
         // Add the stack view to the OTPTextField and apply constraints
         addSubview(labelsStackView)
         applyStackViewConstraints(labelsStackView)
-    }
-    //
-    private func createHorizontalStackView() -> UIStackView {
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .horizontal
-        stackView.alignment = .fill
-        stackView.distribution = .fillEqually
-        stackView.spacing = 8
-        return stackView
     }
     //
     private func applyStackViewConstraints(_ stackView: UIStackView) {
@@ -121,7 +117,7 @@ open class OTPTextField: UITextField {
     private func createDefaultDigitLabel() -> UILabel {
         let label = UILabel()
         label.font = .preferredFont(forTextStyle: .body)
-        label.text = "*"
+        label.text = defaultCharacter
         label.backgroundColor = .gray
         label.layer.cornerRadius = 8
         return label
@@ -144,7 +140,7 @@ extension OTPTextField: UITextFieldDelegate {
             return
         }
         updateDigitLabels(for: text)
-        viewModel.code = text
+        self.code = text
     }
 }
 // MARK: - Private Handlers
@@ -165,7 +161,7 @@ private extension OTPTextField {
             let index = text.index(text.startIndex, offsetBy: index)
             currentLabel.text = String(text[index])
         } else {
-            currentLabel.text = viewModel.defaultCharacter
+            currentLabel.text = self.defaultCharacter
         }
     }
 }

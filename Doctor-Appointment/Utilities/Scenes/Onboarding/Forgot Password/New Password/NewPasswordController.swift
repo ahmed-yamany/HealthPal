@@ -8,9 +8,12 @@
 import UIKit
 import Extensions
 
-class NewPasswordController: CoordinatorViewController<FortgotPasswordViewModel> {
+protocol NewPasswordViewDelegate {
+}
+//
+class NewPasswordController: CoordinatorViewController<LoginViewModel> {
     // MARK: - View
-    lazy var newPasswordView = NewPasswordView(viewModel: viewModel)
+    lazy var newPasswordView = NewPasswordView(viewModel: viewModel, delegate: self)
     //
     // MARK: - Properties
     let viewModel = NewPasswordViewModel()
@@ -21,6 +24,10 @@ class NewPasswordController: CoordinatorViewController<FortgotPasswordViewModel>
         self.view = newPasswordView
         handlerPrivates()
     }
+}
+//
+// MARK: - SignupViewDelegate
+extension NewPasswordController: NewPasswordViewDelegate {
 }
 //
 // MARK: - Private Handlers

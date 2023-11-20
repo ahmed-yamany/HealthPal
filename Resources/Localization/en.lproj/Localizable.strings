@@ -37,3 +37,20 @@
 "profile.textfield.email" = "name@example.com";
 "profile.textfield.date" = "Date of Birth";
 "profile.textfield.gender" = "Gender";
+//
+"forgotPassword.title" = "Forget Password?";
+"forgotPassword.subtitle" = "Enter your Email, we will send you a verification code.";
+"forgotPassword.textField.email" = "Your Email";
+"forgotPassword.button" = "Send Code";
+//
+"verifyCode.title" = "Verify Code";
+"verifyCode.subtitle" = "Enter the the code we just sent you on your registered Email";
+"verifyCode.button" = "Verify";
+"verifyCode.resend.label" = "Didn’t get the Code?";
+"verifyCode.resend.button" = "Resend";
+//
+"newPassword.title" = "Create new password";
+"newPassword.subtitle" = "Your new password must be different form previously used password";
+"newPassword.textField.password" = "Password";
+"newPassword.textField.confirmPassword" = "Confirm Password";
+"newPassword.button" = "Reset Password";

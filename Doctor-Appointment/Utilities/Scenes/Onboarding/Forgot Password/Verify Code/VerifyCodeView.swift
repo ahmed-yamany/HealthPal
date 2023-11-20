@@ -11,12 +11,15 @@ import CompositionalLayoutableSection
 
 class VerifyCodeView: UIView {
     // MARK: IBOutlet
+    @IBOutlet weak var otpTextField: OTPTextField!
     //
     // MARK: - Properties
     let viewModel: VerifyCodeViewModel
+    let delegate: VerifyCodeViewDelegate
     // MARK: Init
-    init(viewModel: VerifyCodeViewModel) {
+    init(viewModel: VerifyCodeViewModel, delegate: VerifyCodeViewDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
         configureUI()
@@ -29,11 +32,27 @@ class VerifyCodeView: UIView {
 // MARK: - Configurations
 private extension VerifyCodeView {
     func configureUI() {
+        otpTextField.dataSource = self
+        otpTextField.slotCount = 5
     }
 }
 //
 // MARK: - Actions
 private extension VerifyCodeView {
+    @IBAction func verifyButtonTapped(_ sender: PrimaryButton) {
+        delegate.verifyButtonTapped()
+    }
+}
+// MARK: - OTPTextFieldDataSource
+extension VerifyCodeView: OTPTextFieldDataSource {
+    func createDigitLabel() -> UILabel {
+        let label = UILabel()
+        label.backgroundColor = .doap200
+        label.layerCornerRadius = 12
+        label.textAlignment = .center
+        label.font = .medium
+        return label
+    }
 }
 //
 private extension VerifyCodeView {

@@ -41,7 +41,6 @@
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="Button"/>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="localized" value="splash.button.next"/>
                                         <userDefinedRuntimeAttribute type="string" keyPath="localize" value="splash.button.next"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
@@ -86,7 +85,6 @@
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Button"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="localized" value="splash.button.skip"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="localize" value="splash.button.skip"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>

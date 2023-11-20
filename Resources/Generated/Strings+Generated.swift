@@ -10,6 +10,18 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum ForgotPassword {
+    /// Send Code
+    internal static let button = L10n.tr("Localizable", "forgotPassword.button", fallback: "Send Code")
+    /// Enter your Email, we will send you a verification code.
+    internal static let subtitle = L10n.tr("Localizable", "forgotPassword.subtitle", fallback: "Enter your Email, we will send you a verification code.")
+    /// Forget Password?
+    internal static let title = L10n.tr("Localizable", "forgotPassword.title", fallback: "Forget Password?")
+    internal enum TextField {
+      /// Your Email
+      internal static let email = L10n.tr("Localizable", "forgotPassword.textField.email", fallback: "Your Email")
+    }
+  }
   internal enum Login {
     /// Sign In
     internal static let button = L10n.tr("Localizable", "login.button", fallback: "Sign In")
@@ -32,6 +44,20 @@ internal enum L10n {
       internal static let email = L10n.tr("Localizable", "login.textField.email", fallback: "Your Email")
       /// Password
       internal static let password = L10n.tr("Localizable", "login.textField.password", fallback: "Password")
+    }
+  }
+  internal enum NewPassword {
+    /// Reset Password
+    internal static let button = L10n.tr("Localizable", "newPassword.button", fallback: "Reset Password")
+    /// Your new password must be different form previously used password
+    internal static let subtitle = L10n.tr("Localizable", "newPassword.subtitle", fallback: "Your new password must be different form previously used password")
+    /// Create new password
+    internal static let title = L10n.tr("Localizable", "newPassword.title", fallback: "Create new password")
+    internal enum TextField {
+      /// Confirm Password
+      internal static let confirmPassword = L10n.tr("Localizable", "newPassword.textField.confirmPassword", fallback: "Confirm Password")
+      /// Password
+      internal static let password = L10n.tr("Localizable", "newPassword.textField.password", fallback: "Password")
     }
   }
   internal enum Profile {
@@ -91,6 +117,20 @@ internal enum L10n {
       internal static let next = L10n.tr("Localizable", "splash.button.next", fallback: "Next")
       /// Skip
       internal static let skip = L10n.tr("Localizable", "splash.button.skip", fallback: "Skip")
+    }
+  }
+  internal enum VerifyCode {
+    /// Verify
+    internal static let button = L10n.tr("Localizable", "verifyCode.button", fallback: "Verify")
+    /// Enter the the code we just sent you on your registered Email
+    internal static let subtitle = L10n.tr("Localizable", "verifyCode.subtitle", fallback: "Enter the the code we just sent you on your registered Email")
+    /// Verify Code
+    internal static let title = L10n.tr("Localizable", "verifyCode.title", fallback: "Verify Code")
+    internal enum Resend {
+      /// Resend
+      internal static let button = L10n.tr("Localizable", "verifyCode.resend.button", fallback: "Resend")
+      /// Didn’t get the Code?
+      internal static let label = L10n.tr("Localizable", "verifyCode.resend.label", fallback: "Didn’t get the Code?")
     }
   }
 }

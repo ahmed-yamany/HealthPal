@@ -16,7 +16,7 @@ final class AppCoordinator {
     ///
     public func start() {
         guard let window else {
-//            Logger.log("Failed to wrap main window", category: \.default, level: .fault)
+            Logger.log("Failed to wrap main window", category: \.default, level: .fault)
             return
         }
         //
@@ -31,8 +31,8 @@ final class AppCoordinator {
         let coordinator = Coordinator<LoginViewModel>(navigationControllerType: DoapNavigationController.self,
                                                       sharedObject: LoginViewModel())
         //
-        coordinator.setCoordinatorTypes([LoginController.self])
-        //
+        coordinator.setCoordinatorTypes([LoginController.self, ForgotPasswordController.self,
+                                         VerifyCodeController.self, NewPasswordController.self])
         window?.rootViewController = coordinator.navigationController
     }
     ///
@@ -41,16 +41,6 @@ final class AppCoordinator {
                                                        sharedObject: SignupViewModel())
         //
         coordinator.setCoordinatorTypes([SignupController.self, CreateProfileController.self])
-        //
-        window?.rootViewController = coordinator.navigationController
-    }
-    ///
-    public func forgotPassword() {
-        let coordinator = Coordinator<FortgotPasswordViewModel>(navigationControllerType: DoapNavigationController.self,
-                                                                sharedObject: FortgotPasswordViewModel())
-        //
-        coordinator.setCoordinatorTypes([FortgotPasswordController.self, VerifyCodeController.self, NewPasswordController.self])
-        //
         window?.rootViewController = coordinator.navigationController
     }
 }

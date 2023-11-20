@@ -54,7 +54,7 @@ private struct TextFieldsView: View {
     }
 }
 //
-private struct DividerView: View {
+struct DividerView: View {
     var body: some View {
         Divider()
             .background(.doap200)
@@ -68,7 +68,7 @@ private struct DividerView: View {
     }
 }
 //
-private struct SocialMediaView: View {
+struct SocialMediaView: View {
     var body: some View {
         VStack(spacing: 16) {
             SocialMediaButton(type: .google) {}

@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-// MARK: FortgotPasswordViewModel
+// MARK: ForgotPasswordViewModel
 //
-class FortgotPasswordViewModel {
+class ForgotPasswordViewModel {
 }

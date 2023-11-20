@@ -14,9 +14,11 @@ class NewPasswordView: UIView {
     //
     // MARK: - Properties
     let viewModel: NewPasswordViewModel
+    let delegate: NewPasswordViewDelegate
     // MARK: Init
-    init(viewModel: NewPasswordViewModel) {
+    init(viewModel: NewPasswordViewModel, delegate: NewPasswordViewDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
         configureUI()
