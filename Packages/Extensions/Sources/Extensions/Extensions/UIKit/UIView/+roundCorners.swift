@@ -45,12 +45,10 @@ public extension UIRectCorner {
 
 public extension UIView {
     @discardableResult
-    func makeCircle(borderWidth: CGFloat = 1.5, borderColor: UIColor = .blue) -> UIView {
+    func makeCircle(height: CGFloat, borderWidth: CGFloat = 1.5, borderColor: UIColor = .clear) -> UIView {
         contentMode = .scaleAspectFill
         clipsToBounds = true
-        widthAnchor.constraint(equalToConstant: frame.height).isActive = true
-        // heightAnchor.constraint(equalToConstant: frame.height).isActive = true
-        layer.cornerRadius = frame.height / 2
+        layer.cornerRadius = height / 2
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
         return self

@@ -22,7 +22,7 @@ final class AppCoordinator {
         }
         //
         if Auth.auth().currentUser != nil {
-            window.rootViewController = TabarController()
+            window.rootViewController = TabBarViewController()
         } else {
             window.rootViewController = SplashController()
         }

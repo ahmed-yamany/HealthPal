@@ -60,3 +60,6 @@
 "newPassword.textField.password" = "Password";
 "newPassword.textField.confirmPassword" = "Confirm Password";
 "newPassword.button" = "Reset Password";
+
+//
+"home.location" = "Location";

@@ -33,6 +33,10 @@ internal enum L10n {
       internal static let email = L10n.tr("Localizable", "forgotPassword.textField.email", fallback: "Your Email")
     }
   }
+  internal enum Home {
+    /// Location
+    internal static let location = L10n.tr("Localizable", "home.location", fallback: "Location")
+  }
   internal enum Login {
     /// Sign In
     internal static let button = L10n.tr("Localizable", "login.button", fallback: "Sign In")

@@ -3,7 +3,7 @@ disabled_rules: # rule identifiers turned on by default to exclude from running
   # TODOs and FIXMEs should be resolved.
   - todo
   - class_delegate_protocol
-  
+  - switch_case_alignment
 # some rules are turned off by default, so you need to opt-in
 opt_in_rules:
   # Prefer checking isEmpty over comparing count to zero
@@ -75,3 +75,4 @@ excluded:
   
 empty_count:
     only_after_dot: true
+

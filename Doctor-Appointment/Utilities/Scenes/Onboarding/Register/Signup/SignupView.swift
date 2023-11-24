@@ -1,13 +1,5 @@
-//
-//  SplashView.swift
-//  Doctor-Appointment
-//
-//  Created by Ahmed Yamany on 12/11/2023.
-//
-
 import UIKit
 import Extensions
-import CompositionalLayoutableSection
 
 class SignupView: UIView {
     // MARK: IBOutlet

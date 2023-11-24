@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 protocol SplashViewDelegate {
     func nextButtonDidTapped()
@@ -18,6 +19,7 @@ class SplashController: UIViewController {
     //
     // MARK: - Properties
     let viewModel = SplashViewModel()
+    var cns: Set<AnyCancellable> = []
     //
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -40,18 +42,18 @@ private extension SplashController {
             }
         }
     }
-    //
+    ///
     func updateSplashView(with splashes: [SplashModel]) {
         viewModel.splashes = splashes
         updateSplashItems(splashes)
         updateNumberOfPages(with: splashes.count)
     }
-    //
+    ///
     func updateSplashItems(_ items: [SplashModel]) {
         splashView.collectionViewSection.items = items
         splashView.collectionView.reloadData()
     }
-    //
+    ///
     func updateNumberOfPages(with number: Int) {
         splashView.pageControl.numberOfPages = number
     }

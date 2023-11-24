@@ -1,22 +1,20 @@
 //
-//  SplashView.swift
+//  ProfileView.swift
 //  Doctor-Appointment
 //
-//  Created by Ahmed Yamany on 12/11/2023.
+//  Created by Ahmed Yamany on 21/11/2023.
 //
 
 import UIKit
-import Extensions
-import CompositionalLayoutableSection
 
-class TabarView: UIView {
+class ProfileView: UIView {
     // MARK: IBOutlet
     //
     // MARK: - Properties
-    let viewModel: TabarViewModel
-    let delegate: TabarViewDelegate
+    let viewModel: ProfileViewModel
+    let delegate: ProfileViewDelegate
     // MARK: Init
-    init(viewModel: TabarViewModel, delegate: TabarViewDelegate) {
+    init(viewModel: ProfileViewModel, delegate: ProfileViewDelegate) {
         self.viewModel = viewModel
         self.delegate = delegate
         super.init(frame: .infinite)
@@ -29,16 +27,16 @@ class TabarView: UIView {
 }
 //
 // MARK: - Configurations
-private extension TabarView {
+private extension ProfileView {
     func configureUI() {
     }
 }
 //
 // MARK: - Actions
-private extension TabarView {
+private extension ProfileView {
 }
 //
-private extension TabarView {
+private extension ProfileView {
     /// Loads the view from a nib file and adds it as a subview to the SplashView view.
     func loadNib() {
         // Please do not update this code, as it's used to load the view from a nib.

@@ -1,10 +1,3 @@
-//
-//  SplashController.swift
-//  Doctor-Appointment
-//
-//  Created by Ahmed Yamany on 11/11/2023.
-//
-
 import UIKit
 import Extensions
 
@@ -43,11 +36,11 @@ extension LoginController: LoginViewDelegate {
             loginView.stopLoading()
         }
     }
-    //
+    ///
     func forgotPasswordTapped() {
         coordinator.push()
     }
-    //
+    ///
     func signupButtonTapped() {
         AppCoordinator.shared.register()
     }

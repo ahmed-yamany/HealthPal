@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppointmentViewView" customModule="Doctor_Appointment" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="547"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-aP-Cwt">
+                    <rect key="frame" x="0.0" y="59" width="378" height="454"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqg-Xw-ksB" userLabel="containerView">
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="20.333333333333332"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nLi-PY-VSn">
+                                    <rect key="frame" x="0.0" y="0.0" width="378" height="20.333333333333332"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-cK-j7E">
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="nLi-PY-VSn" firstAttribute="top" secondItem="Nqg-Xw-ksB" secondAttribute="top" id="HHH-nN-o3F"/>
+                                <constraint firstAttribute="bottom" secondItem="nLi-PY-VSn" secondAttribute="bottom" id="Sok-oy-2NP"/>
+                                <constraint firstItem="nLi-PY-VSn" firstAttribute="leading" secondItem="Nqg-Xw-ksB" secondAttribute="leading" id="ahb-wH-aza"/>
+                                <constraint firstAttribute="trailing" secondItem="nLi-PY-VSn" secondAttribute="trailing" id="aul-PD-mKe"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Nqg-Xw-ksB" firstAttribute="top" secondItem="UnO-wS-M1c" secondAttribute="top" id="EkP-Iy-hX7"/>
+                        <constraint firstItem="Nqg-Xw-ksB" firstAttribute="trailing" secondItem="UnO-wS-M1c" secondAttribute="trailing" id="JDw-FR-7Wp"/>
+                        <constraint firstItem="Nqg-Xw-ksB" firstAttribute="leading" secondItem="UnO-wS-M1c" secondAttribute="leading" id="Lcc-48-3wi"/>
+                        <constraint firstItem="Nqg-Xw-ksB" firstAttribute="bottom" secondItem="UnO-wS-M1c" secondAttribute="bottom" id="fcI-sA-s54"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="UnO-wS-M1c"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="TXj-qO-pKp"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="doap-mainBackground"/>
+            <constraints>
+                <constraint firstItem="ebV-aP-Cwt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="CH9-aM-vaJ"/>
+                <constraint firstItem="ebV-aP-Cwt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VHG-cB-mEq"/>
+                <constraint firstItem="Nqg-Xw-ksB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="fiS-D0-d5F"/>
+                <constraint firstItem="ebV-aP-Cwt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pvZ-C6-GKr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ebV-aP-Cwt" secondAttribute="bottom" id="tSq-N2-Icq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56.488549618320612" y="282.74647887323943"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="doap-mainBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
