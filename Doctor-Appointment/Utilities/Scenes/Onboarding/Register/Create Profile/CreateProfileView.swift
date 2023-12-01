@@ -1,35 +1,52 @@
 import UIKit
+import Extensions
 
 class CreateProfileView: UIView {
     // MARK: IBOutlet
+    @IBOutlet weak var saveButton: PrimaryButton!
+    let activityIndicator = UIActivityIndicatorView()
     //
     // MARK: - Properties
-    let viewModel: CreateProfileViewModel
     let delegate: CreateProfileViewDelegate
     // MARK: Init
-    init(viewModel: CreateProfileViewModel, delegate: CreateProfileViewDelegate) {
-        self.viewModel = viewModel
+    init(delegate: CreateProfileViewDelegate) {
         self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
-        configureUI()
     }
     required init?(coder: NSCoder) {
         fatalError("Failed to initialize from coder")
     }
-    @IBAction func saveButtonTapped(_ sender: PrimaryButton) {
-        delegate.saveButtonTapped()
-    }
+  
 }
-//
 // MARK: - Configurations
-private extension CreateProfileView {
-    func configureUI() {
+extension CreateProfileView {
+    func startLoading() {
+        activityIndicator.color = .doapMainBackground
+        saveButton.show(activityIndicator)
+    }
+    func stopLoading() {
+        activityIndicator.hide()
     }
 }
 //
 // MARK: - Actions
 private extension CreateProfileView {
+    @IBAction func saveButtonTapped(_ sender: PrimaryButton) {
+        delegate.saveButtonTapped()
+    }
+    @IBAction func nameTextFieldEditingChanged(_ sender: PrimaryTextField) {
+        delegate.nameTextFieldEditingChanged(sender.text ?? "")
+    }
+    @IBAction func nickNameTextFieldEditingChanged(_ sender: PrimaryTextField) {
+        delegate.nickNameTextFieldEditingChanged(sender.text ?? "")
+    }
+    @IBAction func dateTextFieldEditingDidEnd(_ sender: DateTextField) {
+        delegate.dataTextFieldEditingDidEnd(sender.text ?? "")
+    }
+    @IBAction func genderTextFieldEditingDidEnd(_ sender: GenderTextField) {
+        delegate.genderTextFieldEditingDidEnd(sender.text ?? "")
+    }
 }
 //
 private extension CreateProfileView {

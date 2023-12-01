@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Combine
+import Firebase
 
 protocol SplashViewDelegate {
     func nextButtonDidTapped()
@@ -19,7 +19,6 @@ class SplashController: UIViewController {
     //
     // MARK: - Properties
     let viewModel = SplashViewModel()
-    var cns: Set<AnyCancellable> = []
     //
     // MARK: - Lifecycle
     override func viewDidLoad() {

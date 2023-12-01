@@ -7,7 +7,8 @@
 
 import UIKit
 import Combine
-
+import FirebaseFirestore
+import FirebaseAuth
 protocol HomeViewDelegate {
 }
 //
@@ -26,6 +27,19 @@ class HomeController: UIViewController {
         self.view = collectionView
         updateView()
         configure()
+        // swiftlint: disable all
+//        let dataBase = Firestore.firestore()
+//        dataBase.collection("users").getDocuments() { (querySnapshot, err) in
+//          if let err = err {
+//            print("Error getting documents: \(err)")
+//          } else {
+//            for document in querySnapshot!.documents {
+//              print("\(document.documentID) => \(document.data())")
+//            }
+//          }
+//        }
+        // swiftlint: enable all
+        try? Auth.auth().signOut()
     }
 }
 //

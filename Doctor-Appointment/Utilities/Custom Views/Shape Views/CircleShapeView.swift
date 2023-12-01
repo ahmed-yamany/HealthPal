@@ -25,7 +25,7 @@ class CircleShapeView: UIView {
         shapeLayer.fillColor = backgroundColor?.cgColor
         backgroundColor = .clear
         shapeLayer.lineWidth = 1
-        
+        ///
         let path = createShapePath()
         shapeLayer.path = path.cgPath
         return shapeLayer

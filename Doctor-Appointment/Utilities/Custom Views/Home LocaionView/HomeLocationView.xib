@@ -34,7 +34,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="avr-CQ-XLl">
                             <rect key="frame" x="0.0" y="43" width="42" height="21"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-location" translatesAutoresizingMaskIntoConstraints="NO" id="v1p-aE-72g">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-location-fill" translatesAutoresizingMaskIntoConstraints="NO" id="v1p-aE-72g">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="Np0-WG-V7T"/>
@@ -63,7 +63,7 @@
         </view>
     </objects>
     <resources>
-        <image name="icon-location" width="18" height="21"/>
+        <image name="icon-location-fill" width="18" height="21"/>
         <namedColor name="doap-500">
             <color red="0.41960784313725491" green="0.44705882352941179" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

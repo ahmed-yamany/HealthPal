@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MedicalCentersCollectionViewCell" customModule="Doctor_Appointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="344"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="344"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="oyt-h2-LGg">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="344"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="COD-lx-8o6">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="172"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nW9-D3-icU">
+                                <rect key="frame" x="0.0" y="184" width="312" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bd-OZ-owq">
+                                        <rect key="frame" x="12" y="0.0" width="288" height="76.666666666666671"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="D6j-RL-dAd">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="76.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise Health Clinic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEU-vB-UkA" customClass="MediumLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="18.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="doap-700"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RR7-eg-7iB">
+                                                        <rect key="frame" x="0.0" y="30.333333333333343" width="260" height="14"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-location" translatesAutoresizingMaskIntoConstraints="NO" id="wTD-Iy-nQN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="14" id="3Nb-c7-c25"/>
+                                                                    <constraint firstAttribute="height" constant="14" id="j3o-fz-S1m"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Oak Street, CA 98765" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DS-OX-HVE" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="14" y="0.0" width="246" height="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="doap-500"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hg2-Xg-D5i">
+                                                        <rect key="frame" x="0.0" y="56.33333333333335" width="260" height="20.333333333333336"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YXr-r2-yTZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="20.333333333333332"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTJ-OS-Q96" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="23.666666666666668" height="20.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" name="doap-500"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u46-Xo-wxK" customClass="RateView" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                        <rect key="frame" x="27.666666666666657" y="0.0" width="129" height="20.333333333333332"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(58 Reviews)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67C-Q2-L6Z" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="160.66666666666666" y="0.0" width="99.333333333333343" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="doap-500"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fHa-lb-9MB">
+                                                <rect key="frame" x="260" y="0.0" width="28" height="76.666666666666671"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTG-GV-W6z" customClass="CircleShapeView" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                                        <color key="backgroundColor" name="doap-300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="1c8-86-jvi"/>
+                                                            <constraint firstAttribute="width" constant="28" id="wv0-I1-Z5A"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oVy-Q9-fwC">
+                                        <rect key="frame" x="12" y="84.666666666666686" width="288" height="29.333333333333329"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzj-dn-h2b">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="1"/>
+                                                <color key="backgroundColor" name="doap-200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="LIa-WE-pvy"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-x9-cPW">
+                                                <rect key="frame" x="0.0" y="8.9999999999999982" width="288" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AlI-p0-5XS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="20.333333333333332"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-routing" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-El-oJ8">
+                                                                <rect key="frame" x="0.0" y="2.3333333333333144" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="12i-ML-nA3"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="UJ2-io-o7G"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5 km/40min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGx-uq-qRL" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="19.999999999999993" y="0.0" width="104.33333333333331" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="doap-500"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eLO-9c-aAV">
+                                                        <rect key="frame" x="205.33333333333334" y="0.0" width="82.666666666666657" height="20.333333333333332"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-hospital" translatesAutoresizingMaskIntoConstraints="NO" id="zaS-59-aMZ">
+                                                                <rect key="frame" x="0.0" y="2.3333333333333144" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="16" id="YBf-WC-ZHl"/>
+                                                                    <constraint firstAttribute="width" constant="16" id="tG7-5H-mFz"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hospital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-BK-jgd" customClass="RegularLabel" customModule="Doctor_Appointment" customModuleProvider="target">
+                                                                <rect key="frame" x="19.999999999999996" y="0.0" width="62.666666666666657" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="doap-500"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="12" bottom="12" trailing="12"/>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-heart" translatesAutoresizingMaskIntoConstraints="NO" id="r10-CC-hQC">
+                        <rect key="frame" x="279" y="191" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="RCC-GM-Pvx"/>
+                            <constraint firstAttribute="height" constant="14" id="vhz-w8-lfs"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="doap-50"/>
+            <constraints>
+                <constraint firstItem="oyt-h2-LGg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7Hi-xt-Jrn"/>
+                <constraint firstItem="r10-CC-hQC" firstAttribute="centerY" secondItem="LTG-GV-W6z" secondAttribute="centerY" id="8fo-bd-XTT"/>
+                <constraint firstItem="r10-CC-hQC" firstAttribute="centerX" secondItem="LTG-GV-W6z" secondAttribute="centerX" id="APY-NE-ZeC"/>
+                <constraint firstAttribute="bottom" secondItem="oyt-h2-LGg" secondAttribute="bottom" id="BEi-IY-pmk"/>
+                <constraint firstItem="COD-lx-8o6" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="J7t-Vd-qkV"/>
+                <constraint firstItem="oyt-h2-LGg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iln-LC-C30"/>
+                <constraint firstAttribute="trailing" secondItem="oyt-h2-LGg" secondAttribute="trailing" id="mPy-0K-cHf"/>
+            </constraints>
+            <size key="customSize" width="312" height="344"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                    <real key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="219.84732824427479" y="122.53521126760565"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon-heart" width="15" height="14"/>
+        <image name="icon-hospital" width="16" height="16"/>
+        <image name="icon-location" width="14" height="14"/>
+        <image name="icon-routing" width="16" height="16"/>
+        <image name="image" width="1500" height="1000"/>
+        <namedColor name="doap-200">
+            <color red="0.89803921568627454" green="0.90588235294117647" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-300">
+            <color red="0.81960784313725488" green="0.83529411764705885" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-50">
+            <color red="0.97647058823529409" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-500">
+            <color red="0.41960784313725491" green="0.44705882352941179" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="doap-700">
+            <color red="0.21568627450980393" green="0.25490196078431371" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

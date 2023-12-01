@@ -28,4 +28,3 @@ class OffersDecorationView: UICollectionReusableView {
         pageControl.currentPageWidth = 28
     }
 }
-

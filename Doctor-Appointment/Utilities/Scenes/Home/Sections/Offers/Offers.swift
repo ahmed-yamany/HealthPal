@@ -11,7 +11,7 @@ import Combine
 
 // MARK: - A custom section for displaying Offers in a collection view.
 class OffersCollectionViewSection: CompositionalLayoutableSection {
-    typealias ItemsType = String
+    typealias ItemsType = OfferModel
     typealias CellType = OffersCollectionViewCell
     typealias BottomSupplementaryViewType = OffersDecorationView
     // typealias DecorationViewType = UICollectionReusableView
@@ -43,6 +43,8 @@ extension OffersCollectionViewSection: CompositionalLayoutableSectionDataSource 
     /// cell For Item At
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(CellType.self, for: indexPath)
+        let offer = items[indexPath.item]
+        cell.configure(with: offer)
         return cell
     }
     // view For Supplementary Element Of Kind

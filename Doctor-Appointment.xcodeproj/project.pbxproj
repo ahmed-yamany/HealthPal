@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1058F22B1222E7002DC7C0 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1058EF2B1222E7002DC7C0 /* CategoriesCollectionViewCell.swift */; };
+		EE1058F32B1222E7002DC7C0 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1058F02B1222E7002DC7C0 /* Categories.swift */; };
+		EE1058F42B1222E7002DC7C0 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1058F12B1222E7002DC7C0 /* CategoriesCollectionViewCell.xib */; };
+		EE1058F92B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1058F62B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.swift */; };
+		EE1058FA2B122EA0002DC7C0 /* MedicalCenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1058F72B122EA0002DC7C0 /* MedicalCenters.swift */; };
+		EE1058FB2B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1058F82B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.xib */; };
 		EE344CCD2B003EDB007E45D3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE344CCB2B003EDB007E45D3 /* SplashView.swift */; };
 		EE344CCE2B003EDB007E45D3 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE344CCC2B003EDB007E45D3 /* SplashView.xib */; };
 		EE3682212B0BC02E00767625 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE3682202B0BC02E00767625 /* GoogleService-Info.plist */; };
@@ -24,6 +30,7 @@
 		EE5BE1AB2AFFBA3B00CF26C9 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BE1A82AFFBA3B00CF26C9 /* UIFont+Style.swift */; };
 		EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */; };
 		EE5BE1B62AFFBAF700CF26C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5BE1B82AFFBAF700CF26C9 /* Localizable.strings */; };
+		EE611C652B15E19900640451 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE611C632B15E19900640451 /* RateView.swift */; };
 		EE62060D2B04D6FD00B74237 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060C2B04D6FD00B74237 /* DateTextField.swift */; };
 		EE62060F2B04DB3800B74237 /* GenderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060E2B04DB3800B74237 /* GenderTextField.swift */; };
 		EE6446212B10E37E00A54749 /* CircleShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6446202B10E37E00A54749 /* CircleShapeView.swift */; };
@@ -87,9 +94,12 @@
 		EE893DDE2B028CD900913047 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE893DDA2B028CD900913047 /* SignupView.xib */; };
 		EE893DE52B0294A800913047 /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE12B0294A800913047 /* CreateProfileController.swift */; };
 		EE893DE62B0294A800913047 /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE22B0294A800913047 /* CreateProfileView.swift */; };
-		EE893DE72B0294A800913047 /* CreateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE32B0294A800913047 /* CreateProfileViewModel.swift */; };
 		EE893DE82B0294A800913047 /* CreateProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE893DE42B0294A800913047 /* CreateProfileView.xib */; };
 		EE893DEA2B029F0C00913047 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893DE92B029F0C00913047 /* AppCoordinator.swift */; };
+		EE89F2552B14A4AA00A0D0E7 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89F2532B14A4AA00A0D0E7 /* CollectionReusableView.swift */; };
+		EE89F2562B14A4AA00A0D0E7 /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE89F2542B14A4AA00A0D0E7 /* CollectionReusableView.xib */; };
+		EE9F16D62B14AF140053C5B4 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F16D52B14AF140053C5B4 /* CategoryModel.swift */; };
+		EE9F16D82B14B7500053C5B4 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F16D72B14B7500053C5B4 /* OfferModel.swift */; };
 		EEB68DBD2B0E6276003751C0 /* HomeLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB68DBB2B0E6276003751C0 /* HomeLocationView.swift */; };
 		EEB68DBE2B0E6276003751C0 /* HomeLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB68DBC2B0E6276003751C0 /* HomeLocationView.xib */; };
 		EEB68DC12B0E6998003751C0 /* LocationProxy in Frameworks */ = {isa = PBXBuildFile; productRef = EEB68DC02B0E6998003751C0 /* LocationProxy */; };
@@ -165,6 +175,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE1058EF2B1222E7002DC7C0 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE1058F02B1222E7002DC7C0 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		EE1058F12B1222E7002DC7C0 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE1058F62B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCentersCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE1058F72B122EA0002DC7C0 /* MedicalCenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCenters.swift; sourceTree = "<group>"; };
+		EE1058F82B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicalCentersCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE344CCB2B003EDB007E45D3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		EE344CCC2B003EDB007E45D3 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
 		EE3682202B0BC02E00767625 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -182,6 +198,7 @@
 		EE5BE1B02AFFBA7E00CF26C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EE5BE1B72AFFBAF700CF26C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EE5BE1B92AFFBAF800CF26C9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE611C632B15E19900640451 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
 		EE62060C2B04D6FD00B74237 /* DateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
 		EE62060E2B04DB3800B74237 /* GenderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderTextField.swift; sourceTree = "<group>"; };
 		EE6446202B10E37E00A54749 /* CircleShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShapeView.swift; sourceTree = "<group>"; };
@@ -241,9 +258,12 @@
 		EE893DDA2B028CD900913047 /* SignupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
 		EE893DE12B0294A800913047 /* CreateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
 		EE893DE22B0294A800913047 /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
-		EE893DE32B0294A800913047 /* CreateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewModel.swift; sourceTree = "<group>"; };
 		EE893DE42B0294A800913047 /* CreateProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileView.xib; sourceTree = "<group>"; };
 		EE893DE92B029F0C00913047 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EE89F2532B14A4AA00A0D0E7 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		EE89F2542B14A4AA00A0D0E7 /* CollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableView.xib; sourceTree = "<group>"; };
+		EE9F16D52B14AF140053C5B4 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		EE9F16D72B14B7500053C5B4 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
 		EEB68DBB2B0E6276003751C0 /* HomeLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocationView.swift; sourceTree = "<group>"; };
 		EEB68DBC2B0E6276003751C0 /* HomeLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeLocationView.xib; sourceTree = "<group>"; };
 		EEB68DC72B0F6236003751C0 /* OffersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -340,6 +360,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1058EE2B1222DC002DC7C0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F16D52B14AF140053C5B4 /* CategoryModel.swift */,
+				EE1058F02B1222E7002DC7C0 /* Categories.swift */,
+				EE1058EF2B1222E7002DC7C0 /* CategoriesCollectionViewCell.swift */,
+				EE1058F12B1222E7002DC7C0 /* CategoriesCollectionViewCell.xib */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EE1058F52B122E8C002DC7C0 /* MedicalCenters */ = {
+			isa = PBXGroup;
+			children = (
+				EE1058F72B122EA0002DC7C0 /* MedicalCenters.swift */,
+				EE1058F62B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.swift */,
+				EE1058F82B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.xib */,
+			);
+			path = MedicalCenters;
+			sourceTree = "<group>";
+		};
 		EE3DDE332B0A9D0800AAF0AD /* Sign up */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +475,14 @@
 				EE7A6F6C2B0CC374008A02E1 /* Notifications */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE611C622B15E19000640451 /* Rate View */ = {
+			isa = PBXGroup;
+			children = (
+				EE611C632B15E19900640451 /* RateView.swift */,
+			);
+			path = "Rate View";
 			sourceTree = "<group>";
 		};
 		EE64461F2B10E36F00A54749 /* Shape Views */ = {
@@ -565,6 +614,15 @@
 			path = TextFields;
 			sourceTree = "<group>";
 		};
+		EE89F2522B14A48F00A0D0E7 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				EE89F2532B14A4AA00A0D0E7 /* CollectionReusableView.swift */,
+				EE89F2542B14A4AA00A0D0E7 /* CollectionReusableView.xib */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 		EEB68DBA2B0E61ED003751C0 /* Home LocaionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,7 +635,10 @@
 		EEB68DC52B0F6212003751C0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				EE89F2522B14A48F00A0D0E7 /* ReusableView */,
 				EEB68DC62B0F622B003751C0 /* Offers */,
+				EE1058EE2B1222DC002DC7C0 /* Categories */,
+				EE1058F52B122E8C002DC7C0 /* MedicalCenters */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -585,6 +646,7 @@
 		EEB68DC62B0F622B003751C0 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
+				EE9F16D72B14B7500053C5B4 /* OfferModel.swift */,
 				EEB68DC82B0F6236003751C0 /* Offers.swift */,
 				EE6446222B10EAFE00A54749 /* OffersDecorationView.swift */,
 				EEB68DC72B0F6236003751C0 /* OffersCollectionViewCell.swift */,
@@ -629,8 +691,9 @@
 		EEC481BF2AFFEB7700EC52DF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE64461F2B10E36F00A54749 /* Shape Views */,
 				EE72E4612B0379A200448367 /* DoapNavigationController.swift */,
+				EE611C622B15E19000640451 /* Rate View */,
+				EE64461F2B10E36F00A54749 /* Shape Views */,
 				EE812DF32B02CF53007DB05F /* TextFields */,
 				EEC481CF2AFFEE5900EC52DF /* Buttons */,
 				EEC481C22AFFEB9200EC52DF /* Labels */,
@@ -784,6 +847,7 @@
 		EEFD04672B013A1500D303B7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				EE893DD92B028CD900913047 /* SignupViewModel.swift */,
 				EEFD04722B013BD300D303B7 /* Signup */,
 				EEFD04732B013BF800D303B7 /* Create Profile */,
 			);
@@ -795,7 +859,6 @@
 			children = (
 				EE893DD82B028CD900913047 /* SignupView.swift */,
 				EE893DDA2B028CD900913047 /* SignupView.xib */,
-				EE893DD92B028CD900913047 /* SignupViewModel.swift */,
 				EE893DD72B028CD900913047 /* SignupController.swift */,
 			);
 			path = Signup;
@@ -806,7 +869,6 @@
 			children = (
 				EE893DE22B0294A800913047 /* CreateProfileView.swift */,
 				EE893DE42B0294A800913047 /* CreateProfileView.xib */,
-				EE893DE32B0294A800913047 /* CreateProfileViewModel.swift */,
 				EE893DE12B0294A800913047 /* CreateProfileController.swift */,
 			);
 			path = "Create Profile";
@@ -994,8 +1056,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE83A4832B0B605600A4CD7A /* VerifyCodeView.xib in Resources */,
+				EE89F2562B14A4AA00A0D0E7 /* CollectionReusableView.xib in Resources */,
 				EE5BE19D2AFFB9C900CF26C9 /* .swiftlint.yml in Resources */,
 				EEB68DBE2B0E6276003751C0 /* HomeLocationView.xib in Resources */,
+				EE1058FB2B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.xib in Resources */,
 				EE7A6F542B0C7076008A02E1 /* AppointmentView.xib in Resources */,
 				EE344CCE2B003EDB007E45D3 /* SplashView.xib in Resources */,
 				EEC481E02AFFFB7200EC52DF /* SplashCollectionViewCell.xib in Resources */,
@@ -1015,6 +1079,7 @@
 				EE7A6F4B2B0C705D008A02E1 /* LocationView.xib in Resources */,
 				EEFEA0732B0B951B0030AEA8 /* AlertView.xib in Resources */,
 				EE3682212B0BC02E00767625 /* GoogleService-Info.plist in Resources */,
+				EE1058F42B1222E7002DC7C0 /* CategoriesCollectionViewCell.xib in Resources */,
 				EE893DDE2B028CD900913047 /* SignupView.xib in Resources */,
 				EE5BE1B12AFFBA7E00CF26C9 /* Colors.xcassets in Resources */,
 				EE7A6F6B2B0CC2D7008A02E1 /* BellView.xib in Resources */,
@@ -1083,6 +1148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9F16D82B14B7500053C5B4 /* OfferModel.swift in Sources */,
 				EE7A6F522B0C7076008A02E1 /* AppointmentView.swift in Sources */,
 				EEC481CB2AFFEB9D00EC52DF /* RegularLabel.swift in Sources */,
 				EE7A6F6E2B0CC390008A02E1 /* Notification.swift in Sources */,
@@ -1093,9 +1159,12 @@
 				EEFEA0752B0BA06D0030AEA8 /* AlertType.swift in Sources */,
 				EEC481DF2AFFFB7200EC52DF /* SplashSection.swift in Sources */,
 				EE5BE1662AFFB5F700CF26C9 /* AppDelegate.swift in Sources */,
+				EE1058FA2B122EA0002DC7C0 /* MedicalCenters.swift in Sources */,
 				EE893DEA2B029F0C00913047 /* AppCoordinator.swift in Sources */,
 				EE5BE1A32AFFBA2000CF26C9 /* Strings+Generated.swift in Sources */,
+				EE9F16D62B14AF140053C5B4 /* CategoryModel.swift in Sources */,
 				EE70AC782B02BCBC003B4DA3 /* LogoView.swift in Sources */,
+				EE611C652B15E19900640451 /* RateView.swift in Sources */,
 				EE893DDB2B028CD900913047 /* SignupController.swift in Sources */,
 				EE72E45A2B0342F700448367 /* SocialMediaButton.swift in Sources */,
 				EE72E46A2B03897600448367 /* UINavigationItem+.swift in Sources */,
@@ -1112,6 +1181,7 @@
 				EE7A6F662B0C7D7F008A02E1 /* TabBarViewController.swift in Sources */,
 				EE83A48A2B0B6CA000A4CD7A /* NewPasswordViewModel.swift in Sources */,
 				EEFEA0712B0B951B0030AEA8 /* AlertView.swift in Sources */,
+				EE1058F92B122EA0002DC7C0 /* MedicalCentersCollectionViewCell.swift in Sources */,
 				EE6446232B10EAFE00A54749 /* OffersDecorationView.swift in Sources */,
 				EE7A6F512B0C7076008A02E1 /* AppointmentController.swift in Sources */,
 				EEC481CC2AFFEB9D00EC52DF /* MediumLabel.swift in Sources */,
@@ -1136,12 +1206,15 @@
 				EEB68DBD2B0E6276003751C0 /* HomeLocationView.swift in Sources */,
 				EE83A4882B0B6CA000A4CD7A /* NewPasswordController.swift in Sources */,
 				EE893DE52B0294A800913047 /* CreateProfileController.swift in Sources */,
+				EE1058F32B1222E7002DC7C0 /* Categories.swift in Sources */,
+				EE89F2552B14A4AA00A0D0E7 /* CollectionReusableView.swift in Sources */,
 				EE893DE62B0294A800913047 /* CreateProfileView.swift in Sources */,
 				EEC481BC2AFFEAA600EC52DF /* SplashController.swift in Sources */,
 				EE83A4822B0B605600A4CD7A /* VerifyCodeViewModel.swift in Sources */,
 				EE7A6F4A2B0C705D008A02E1 /* LocationViewModel.swift in Sources */,
 				EE70AC6B2B02B208003B4DA3 /* LoginViewModel.swift in Sources */,
 				EE72E4602B0360D600448367 /* MediumButton.swift in Sources */,
+				EE1058F22B1222E7002DC7C0 /* CategoriesCollectionViewCell.swift in Sources */,
 				EE7A6F532B0C7076008A02E1 /* AppointmentViewModel.swift in Sources */,
 				EE83A4792B0B5BB100A4CD7A /* ForgotPasswordView.swift in Sources */,
 				EEC481CE2AFFEB9D00EC52DF /* H3Label.swift in Sources */,
@@ -1150,7 +1223,6 @@
 				EE70AC6A2B02B208003B4DA3 /* LoginView.swift in Sources */,
 				EEC481BD2AFFEAA600EC52DF /* SplashViewModel.swift in Sources */,
 				EE83A4782B0B5BB100A4CD7A /* ForgotPasswordController.swift in Sources */,
-				EE893DE72B0294A800913047 /* CreateProfileViewModel.swift in Sources */,
 				EE83A47A2B0B5BB100A4CD7A /* ForgotPasswordViewModel.swift in Sources */,
 				EE344CCD2B003EDB007E45D3 /* SplashView.swift in Sources */,
 				EE62060F2B04DB3800B74237 /* GenderTextField.swift in Sources */,

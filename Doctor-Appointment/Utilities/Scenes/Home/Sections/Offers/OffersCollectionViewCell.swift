@@ -8,11 +8,15 @@
 import UIKit
 
 class OffersCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: H3Label!
+    @IBOutlet weak var subtitleLabel: RegularLabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-//        circleView.makeCircle()
-//        let view = UIView(frame: .init(x: 5, y: 5, width: 20, height: 20))
-//        view.backgroundColor = .red
-//        circleView.addSubview(view)
+    }
+    func configure(with offer: OfferModel) {
+        imageView.image = offer.uiImage
+        titleLabel.text = offer.title
+        subtitleLabel.text = offer.subtitle
     }
 }

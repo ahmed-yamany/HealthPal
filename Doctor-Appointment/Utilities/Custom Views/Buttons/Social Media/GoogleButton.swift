@@ -57,7 +57,7 @@ open class GoogleButton: SocialMediaButton {
         //
         let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: result.user.accessToken.tokenString)
         do {
-            try await Auth.auth().signIn(with: credential)
+            let result = try await Auth.auth().signIn(with: credential)
             DispatchQueue.main.async {
                 AppCoordinator.shared.checkLogin()
             }

@@ -36,6 +36,8 @@ internal enum L10n {
   internal enum Home {
     /// Location
     internal static let location = L10n.tr("Localizable", "home.location", fallback: "Location")
+    /// See All
+    internal static let seeAll = L10n.tr("Localizable", "home.seeAll", fallback: "See All")
   }
   internal enum Login {
     /// Sign In

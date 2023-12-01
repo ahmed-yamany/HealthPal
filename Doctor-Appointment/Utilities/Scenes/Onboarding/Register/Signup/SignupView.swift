@@ -7,11 +7,9 @@ class SignupView: UIView {
     let activityIndicator = UIActivityIndicatorView()
     //
     // MARK: - Properties
-    let viewModel: SignupViewModel
     let delegate: SignupViewDelegate
     // MARK: Init
-    init(viewModel: SignupViewModel, delegate: SignupViewDelegate) {
-        self.viewModel = viewModel
+    init(delegate: SignupViewDelegate) {
         self.delegate = delegate
         super.init(frame: .infinite)
         loadNib()
@@ -34,16 +32,12 @@ extension SignupView {
 //
 // MARK: - Actions
 private extension SignupView {
-    @IBAction func nameTextFieldEditingChanged(_ sender: PrimaryTextField) {
-        viewModel.name = sender.text ?? ""
-    }
-    ///
     @IBAction func emailTextFieldEditingChanged(_ sender: PrimaryTextField) {
-        viewModel.email = sender.text ?? ""
+        delegate.emailTextFieldEditingChanged(sender.text ?? "")
     }
     ///
     @IBAction func passwordTextFieldEditingChanged(_ sender: PrimaryTextField) {
-        viewModel.password = sender.text ?? ""
+        delegate.passwordTextFieldEditingChanged(sender.text ?? "")
     }
     ///
     @IBAction func signupButtonTapped(_ sender: UIButton) {

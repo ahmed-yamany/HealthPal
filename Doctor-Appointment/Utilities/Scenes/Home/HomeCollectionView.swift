@@ -33,8 +33,16 @@ class HomeCollectionView: UICollectionView, CompositionalLayoutProvider {
 private extension HomeCollectionView {
     func configureUI() {
         let section = OffersCollectionViewSection()
-        section.items = Array(repeating: "h", count: 10)
+        section.items = viewModel.offers
         compositionalLayoutSections.append(section)
+        //
+        let categoriesSection = CategoriesCollectionViewSection()
+        categoriesSection.items = viewModel.categories
+        compositionalLayoutSections.append(categoriesSection)
+        //
+        let centersSection = MedicalCentersCollectionViewSection()
+        centersSection.items = Array(repeating: "h", count: 10)
+        compositionalLayoutSections.append(centersSection)
         updateCollectionViewCompositionalLayout(for: self)
     }
 }

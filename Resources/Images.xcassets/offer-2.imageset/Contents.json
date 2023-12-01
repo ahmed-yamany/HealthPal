@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "behnazsabaa_Portrait_of_Smiling_Medical_Doctor__Style_of_Her_Fi_cc8a8fb3-215c-4da9-a8cd-d8179c28a8b7.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -76,6 +76,11 @@
                     <real key="value" value="12"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="jkn-1Y-xd5" id="cmf-zf-nOT"/>
+                <outlet property="subtitleLabel" destination="VvC-c3-LSg" id="TfO-Uz-zLQ"/>
+                <outlet property="titleLabel" destination="JhC-F0-Gzy" id="7MH-md-rLT"/>
+            </connections>
             <point key="canvasLocation" x="325.19083969465646" y="72.535211267605632"/>
         </collectionViewCell>
     </objects>

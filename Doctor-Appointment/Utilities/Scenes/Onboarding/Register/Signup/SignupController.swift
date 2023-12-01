@@ -2,16 +2,18 @@ import UIKit
 import Extensions
 
 protocol SignupViewDelegate {
+    func emailTextFieldEditingChanged(_ text: String)
+    func passwordTextFieldEditingChanged(_ text: String)
     func signupButtonTapped()
     func signinButtonTapped()
 }
 //
 class SignupController: CoordinatorViewController<SignupViewModel> {
     // MARK: - View
-    lazy var signupView = SignupView(viewModel: viewModel, delegate: self)
+    lazy var signupView = SignupView(delegate: self)
     //
     // MARK: - Properties
-    let viewModel = SignupViewModel()
+    lazy var viewModel: SignupViewModel = sharedObject // the shared object from the coordiator
     //
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -22,9 +24,17 @@ class SignupController: CoordinatorViewController<SignupViewModel> {
 //
 // MARK: - SignupViewDelegate
 extension SignupController: SignupViewDelegate {
+    func emailTextFieldEditingChanged(_ text: String) {
+        viewModel.email = text
+    }
+    ///
+    func passwordTextFieldEditingChanged(_ text: String) {
+        viewModel.password = text
+    }
+    ///
     func signupButtonTapped() {
-        if viewModel.isValidForm() {
-            performSignup()
+        if viewModel.isSignupFormValid() {
+            coordinator.push()
         } else {
             AlertController.shared.preset(type: .warrning, with: L10n.Signup.Alert.warrning, dismissAfter: 2)
         }
@@ -37,27 +47,4 @@ extension SignupController: SignupViewDelegate {
 //
 // MARK: - Private Handlers
 private extension SignupController {
-    func performSignup() {
-        signupView.startLoading()
-        Task {
-            do {
-                try await viewModel.performSignup()
-                onSuccessSignup()
-            } catch {
-                showSignupError(error)
-            }
-            signupView.stopLoading()
-        }
-    }
-    ///
-    func onSuccessSignup() {
-        AlertController.shared.preset(type: .success, with: L10n.Signup.Alert.success, dismissAfter: 3.0) {
-            AppCoordinator.shared.checkLogin()
-        }
-        Logger.log("Signup done", category: \.default, level: .info)
-    }
-    ///
-    func showSignupError(_ error: Error) {
-        AlertController.shared.preset(type: .error, with: error.localizedDescription, dismissAfter: 3.0)
-    }
 }
